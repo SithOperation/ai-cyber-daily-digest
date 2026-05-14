@@ -12,6 +12,7 @@ DISCORD_WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
 
 MAX_PER_CATEGORY = 5
 MAX_ENTRIES_PER_FEED = 8
+DISCORD_LIMIT = 1900
 
 AI_FEEDS = [
     "https://openai.com/news/rss.xml",
@@ -38,7 +39,6 @@ AI_FEEDS = [
 
 CYBER_FEEDS = [
     "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-    "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
     "https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml",
     "https://feeds.feedburner.com/TheHackersNews",
     "https://krebsonsecurity.com/feed/",
@@ -119,13 +119,30 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
+def trim(text, max_len=240):
+    text = clean_text(text)
+    if len(text) <= max_len:
+        return text
+    return text[: max_len - 3] + "..."
+
 def send_discord_alert(message):
-    response = requests.post(DISCORD_WEBHOOK_URL, json={"content": message}, timeout=20)
+    message = message[:DISCORD_LIMIT]
+
+    response = requests.post(
+        DISCORD_WEBHOOK_URL,
+        json={"content": message},
+        timeout=20
+    )
 
     if response.status_code == 429:
         retry_after = response.json().get("retry_after", 5)
         time.sleep(retry_after + 1)
-        response = requests.post(DISCORD_WEBHOOK_URL, json={"content": message}, timeout=20)
+
+        response = requests.post(
+            DISCORD_WEBHOOK_URL,
+            json={"content": message},
+            timeout=20
+        )
 
     response.raise_for_status()
     time.sleep(2)
@@ -146,7 +163,7 @@ def score_story(title, summary, keywords):
     if title:
         score += 2
 
-    return score, matched[:6]
+    return score, matched[:5]
 
 def parse_rss_feed(feed_url, category, keywords):
     stories = []
@@ -154,9 +171,9 @@ def parse_rss_feed(feed_url, category, keywords):
     feed = feedparser.parse(feed_url)
 
     for entry in feed.entries[:MAX_ENTRIES_PER_FEED]:
-        title = clean_text(getattr(entry, "title", ""))
+        title = trim(getattr(entry, "title", ""), 180)
         link = getattr(entry, "link", "")
-        summary = clean_text(getattr(entry, "summary", ""))
+        summary = trim(getattr(entry, "summary", ""), 200)
 
         if not title or not link:
             continue
@@ -172,7 +189,7 @@ def parse_rss_feed(feed_url, category, keywords):
             "link": link,
             "score": score,
             "matched": matched,
-            "source": feed.feed.get("title", "Unknown source"),
+            "source": trim(feed.feed.get("title", "Unknown source"), 80),
         })
 
     return stories
@@ -194,24 +211,23 @@ def parse_cisa_kev_json():
             vendor = vuln.get("vendorProject", "")
             product = vuln.get("product", "")
             name = vuln.get("vulnerabilityName", "")
-            due_date = vuln.get("dueDate", "")
             link = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
 
             title = f"{cve_id}: {vendor} {product} - {name}"
-            summary = f"Known exploited vulnerability. Due date: {due_date}"
 
-            score, matched = score_story(title, summary, CYBER_KEYWORDS)
+            score, matched = score_story(title, "known exploited vulnerability", CYBER_KEYWORDS)
+
             stories.append({
                 "category": "Cybersecurity",
-                "title": clean_text(title),
+                "title": trim(title, 180),
                 "link": link,
                 "score": score + 10,
                 "matched": matched + ["known exploited"],
                 "source": "CISA KEV Catalog",
             })
 
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"CISA KEV error: {e}")
 
     return stories
 
@@ -220,8 +236,6 @@ def collect_stories(feeds, category, keywords):
 
     for feed_url in feeds:
         try:
-            if feed_url.endswith(".json"):
-                continue
             all_stories.extend(parse_rss_feed(feed_url, category, keywords))
         except Exception as e:
             print(f"Feed error: {feed_url} — {e}")
@@ -245,40 +259,27 @@ def dedupe_and_rank(stories, seen_links, limit):
     ranked = sorted(unique.values(), key=lambda x: x["score"], reverse=True)
     return ranked[:limit]
 
-def format_digest(ai_stories, cyber_stories):
+def format_category_digest(title, stories):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     lines = [
-        f"🧠🔐 **AI + Cybersecurity Daily Digest — {today}**",
-        "",
-        "**Top 5 AI Stories**",
+        f"{title} — {today}",
+        ""
     ]
 
-    if not ai_stories:
-        lines.append("No strong AI stories found today.")
+    if not stories:
+        lines.append("No strong stories found today.")
     else:
-        for index, story in enumerate(ai_stories, 1):
+        for index, story in enumerate(stories, 1):
             tags = ", ".join(story["matched"]) if story["matched"] else "general"
+
             lines.append(
                 f"{index}. **{story['title']}**\n"
                 f"Source: {story['source']} | Tags: {tags}\n"
                 f"{story['link']}"
             )
 
-    lines.extend(["", "**Top 5 Cybersecurity Stories**"])
-
-    if not cyber_stories:
-        lines.append("No strong cybersecurity stories found today.")
-    else:
-        for index, story in enumerate(cyber_stories, 1):
-            tags = ", ".join(story["matched"]) if story["matched"] else "general"
-            lines.append(
-                f"{index}. **{story['title']}**\n"
-                f"Source: {story['source']} | Tags: {tags}\n"
-                f"{story['link']}"
-            )
-
-    return "\n\n".join(lines)
+    return "\n\n".join(lines)[:DISCORD_LIMIT]
 
 def main():
     state = load_state()
@@ -291,8 +292,11 @@ def main():
     top_ai = dedupe_and_rank(ai_stories, seen_links, MAX_PER_CATEGORY)
     top_cyber = dedupe_and_rank(cyber_stories, seen_links, MAX_PER_CATEGORY)
 
-    message = format_digest(top_ai, top_cyber)
-    send_discord_alert(message)
+    ai_message = format_category_digest("🧠 **Top 5 AI Stories**", top_ai)
+    cyber_message = format_category_digest("🔐 **Top 5 Cybersecurity Stories**", top_cyber)
+
+    send_discord_alert(ai_message)
+    send_discord_alert(cyber_message)
 
     for story in top_ai + top_cyber:
         seen_links.add(story["link"])

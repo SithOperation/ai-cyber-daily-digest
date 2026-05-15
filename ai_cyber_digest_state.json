@@ -1,11 +1,21 @@
 {
   "seen_links": [
+    "https://arxiv.org/abs/2605.14002",
     "https://machinelearningmastery.com/llm-observability-tools-for-reliable-ai-applications/",
+    "https://arxiv.org/abs/2605.13941",
+    "https://arxiv.org/abs/2605.13936",
+    "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-critical-sd-wan-flaw-exploited-in-zero-day-attacks/",
     "https://arxiv.org/abs/2605.12620",
-    "https://arxiv.org/abs/2605.12718",
     "https://www.marktechpost.com/2026/05/13/nous-research-releases-token-superposition-training-to-speed-up-llm-pre-training-by-up-to-2-5x-across-270m-to-10b-parameter-models/",
+    "https://www.rapid7.com/blog/post/ve-cve-2026-20182-critical-authentication-bypass-cisco-catalyst-sd-wan-controller-fixed",
+    "https://unit42.paloaltonetworks.com/captive-portal-zero-day/",
+    "https://arxiv.org/abs/2605.12718",
+    "https://arxiv.org/abs/2605.13851",
+    "https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html",
+    "https://www.artificialintelligence-news.com/news/laserfiche-ai-agents-act-autonomously-for-the-platforms-users/",
     "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html",
     "https://arxiv.org/abs/2605.12682"
   ],
-  "last_digest": "2026-05-14T09:08:41.145018+00:00"
+  "last_digest": "2026-05-15T11:13:46.294225+00:00"
 }

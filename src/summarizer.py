@@ -31,7 +31,7 @@ def create_digest(articles):
     output = """
 # AI Cyber Digest
 
-Automated Cybersecurity Intelligence Report
+Top 5 AI + Cybersecurity Intelligence Reports
 
 """
 

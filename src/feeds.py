@@ -1,4 +1,5 @@
 import feedparser
+from config import MAX_ARTICLES
 
 
 def collect_articles(feeds, seen):
@@ -24,6 +25,10 @@ def collect_articles(feeds, seen):
                 "link",
                 ""
             )
+
+
+            if not link:
+                continue
 
 
             if link in seen:
@@ -54,6 +59,11 @@ def collect_articles(feeds, seen):
                     )
 
             })
+
+
+            if len(articles) >= MAX_ARTICLES:
+
+                return articles
 
 
     return articles

@@ -1,2 +1,3 @@
-requests
 feedparser
+requests
+python-dateutil

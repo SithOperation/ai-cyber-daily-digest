@@ -28,19 +28,19 @@ Link:
 
 def create_digest(articles):
 
-    output="""
-
+    output = """
 # AI Cyber Digest
 
 Automated Cybersecurity Intelligence Report
-
 
 """
 
 
     for article in articles:
 
-        output += summarize(article)
+        output += summarize(
+            article
+        )
 
 
     return output

@@ -18,7 +18,10 @@ def load_state():
 
 
 def save_state(state):
-    STATE_FILE.parent.mkdir(exist_ok=True)
+    STATE_FILE.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
 
     state["last_digest"] = datetime.now(
         timezone.utc

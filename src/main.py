@@ -23,17 +23,30 @@ def send_discord(message):
         print("Discord webhook not configured")
         return
 
-    response = requests.post(
-        webhook,
-        json={
-            "content": message
-        },
-        timeout=10
-    )
+    max_length = 1900
 
-    print(
-        f"Discord response: {response.status_code}"
-    )
+    chunks = [
+        message[i:i + max_length]
+        for i in range(
+            0,
+            len(message),
+            max_length
+        )
+    ]
+
+    for index, chunk in enumerate(chunks):
+
+        response = requests.post(
+            webhook,
+            json={
+                "content": chunk
+            },
+            timeout=10
+        )
+
+        print(
+            f"Discord chunk {index + 1}/{len(chunks)} status: {response.status_code}"
+        )
 
 
 def save_digest_file(digest):

@@ -1,8 +1,16 @@
-from feeds import collect_articles
-from summarizer import summarize_articles
-from state import load_state, save_state, already_seen, add_seen
+from pathlib import Path
 import os
 import requests
+
+from config import RSS_FEEDS, OUTPUT_FILE
+from feeds import collect_articles
+from summarizer import create_digest
+from state import (
+    load_state,
+    save_state,
+    already_seen,
+    add_seen
+)
 
 
 def send_discord(message):
@@ -12,23 +20,63 @@ def send_discord(message):
     )
 
     if not webhook:
+        print("Discord webhook not configured")
         return
 
-    requests.post(
+    response = requests.post(
         webhook,
         json={
             "content": message
-        }
+        },
+        timeout=10
     )
+
+    print(
+        f"Discord response: {response.status_code}"
+    )
+
+
+def save_digest_file(digest):
+
+    output_path = Path(
+        OUTPUT_FILE
+    )
+
+    output_path.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    with open(
+        output_path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+        file.write(digest)
 
 
 def main():
 
+    print("Loading state...")
+
     state = load_state()
 
-    articles = collect_articles()
+
+    print("Collecting articles...")
+
+    articles = collect_articles(
+        RSS_FEEDS,
+        state["seen_links"]
+    )
+
+
+    print(
+        f"Articles collected: {len(articles)}"
+    )
+
 
     new_articles = []
+
 
     for article in articles:
 
@@ -36,23 +84,55 @@ def main():
             article["link"],
             state
         ):
-            new_articles.append(article)
+
+            new_articles.append(
+                article
+            )
+
             add_seen(
                 article["link"],
                 state
             )
 
 
+    print(
+        f"New articles: {len(new_articles)}"
+    )
+
+
     if new_articles:
 
-        digest = summarize_articles(
+        print("Creating digest...")
+
+        digest = create_digest(
             new_articles
         )
 
-        send_discord(digest)
+
+        save_digest_file(
+            digest
+        )
 
 
-    save_state(state)
+        send_discord(
+            digest
+        )
+
+    else:
+
+        print(
+            "No new articles found"
+        )
+
+
+    save_state(
+        state
+    )
+
+
+    print(
+        "Digest complete"
+    )
 
 
 if __name__ == "__main__":

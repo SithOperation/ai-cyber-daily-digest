@@ -10,7 +10,8 @@ RSS_FEEDS = [
     "https://blog.google/technology/ai/rss/",
 ]
 
-MAX_ARTICLES = 20
+
+MAX_ARTICLES = 5
 
 STATE_FILE = "data/ai_cyber_digest_state.json"
 

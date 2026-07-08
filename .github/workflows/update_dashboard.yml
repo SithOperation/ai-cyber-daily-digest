@@ -1,45 +1,98 @@
 name: Update Website Dashboard - Cyber Digest
 
+
 on:
+
   workflow_run:
-    workflows: ["AI Cyber Daily Digest"]
+
+    workflows:
+      - "AI Cyber Daily Digest"
+
     types:
       - completed
 
+
   workflow_dispatch:
+
 
 permissions:
   contents: write
 
+
+
 jobs:
+
+
   update-dashboard:
+
+
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
 
     runs-on: ubuntu-latest
 
+
+
     steps:
+
 
       - name: Checkout AI Digest repository
         uses: actions/checkout@v4
 
+
+
       - name: Checkout Website repository
         uses: actions/checkout@v4
+
         with:
+
           repository: SithOperation/my-website
+
           path: website
+
           token: ${{ secrets.WEBSITE_TOKEN }}
 
-      - name: Copy AI digest state
+
+
+      - name: Copy digest files
         run: |
-          cp data/ai_cyber_digest_state.json website/data/ai_cyber_digest_state.json
+
+          mkdir -p website/data
+
+          mkdir -p website/output
+
+
+          cp data/ai_cyber_digest_state.json \
+          website/data/ai_cyber_digest_state.json
+
+
+          if [ -f output/latest_digest.md ]; then
+
+            cp output/latest_digest.md \
+            website/output/latest_digest.md
+
+          fi
+
+
 
       - name: Commit dashboard update
         working-directory: website
+
         run: |
+
           git config user.name "ai-cyber-monitor"
+
           git config user.email "actions@github.com"
+
 
           git add data/ai_cyber_digest_state.json
 
-          git commit -m "Update AI cyber digest dashboard state" || exit 0
+          git add output/latest_digest.md
+
+
+          git commit \
+          -m "Update AI cyber digest dashboard" \
+          || exit 0
+
 
           git push

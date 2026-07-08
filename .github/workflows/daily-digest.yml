@@ -27,7 +27,7 @@ jobs:
       - name: Run digest
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python ai-cyber-digest.py
+        run: python src/main.py
 
       - name: Save state
         run: |

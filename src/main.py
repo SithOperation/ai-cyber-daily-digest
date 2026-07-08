@@ -2,9 +2,16 @@ from pathlib import Path
 import os
 import requests
 
-from config import RSS_FEEDS, OUTPUT_FILE
+from config import (
+    RSS_FEEDS,
+    OUTPUT_FILE,
+    MAX_ARTICLES
+)
+
 from feeds import collect_articles
+
 from summarizer import create_digest
+
 from state import (
     load_state,
     save_state,
@@ -19,34 +26,34 @@ def send_discord(message):
         "DISCORD_WEBHOOK_URL"
     )
 
+
     if not webhook:
-        print("Discord webhook not configured")
-        return
-
-    max_length = 1900
-
-    chunks = [
-        message[i:i + max_length]
-        for i in range(
-            0,
-            len(message),
-            max_length
-        )
-    ]
-
-    for index, chunk in enumerate(chunks):
-
-        response = requests.post(
-            webhook,
-            json={
-                "content": chunk
-            },
-            timeout=10
-        )
 
         print(
-            f"Discord chunk {index + 1}/{len(chunks)} status: {response.status_code}"
+            "Discord webhook not configured"
         )
+
+        return
+
+
+
+    response = requests.post(
+
+        webhook,
+
+        json={
+            "content": message[:1900]
+        },
+
+        timeout=10
+
+    )
+
+
+    print(
+        f"Discord status: {response.status_code}"
+    )
+
 
 
 def save_digest_file(digest):
@@ -55,31 +62,46 @@ def save_digest_file(digest):
         OUTPUT_FILE
     )
 
+
     output_path.parent.mkdir(
         parents=True,
         exist_ok=True
     )
+
 
     with open(
         output_path,
         "w",
         encoding="utf-8"
     ) as file:
-        file.write(digest)
+
+        file.write(
+            digest
+        )
+
 
 
 def main():
 
-    print("Loading state...")
+    print(
+        "Loading state..."
+    )
+
 
     state = load_state()
 
 
-    print("Collecting articles...")
+    print(
+        "Collecting articles..."
+    )
+
 
     articles = collect_articles(
+
         RSS_FEEDS,
+
         state["seen_links"]
+
     )
 
 
@@ -93,6 +115,7 @@ def main():
 
     for article in articles:
 
+
         if not already_seen(
             article["link"],
             state
@@ -102,10 +125,11 @@ def main():
                 article
             )
 
-            add_seen(
-                article["link"],
-                state
-            )
+
+        if len(new_articles) >= MAX_ARTICLES:
+
+            break
+
 
 
     print(
@@ -113,9 +137,14 @@ def main():
     )
 
 
+
     if new_articles:
 
-        print("Creating digest...")
+
+        print(
+            "Creating digest..."
+        )
+
 
         digest = create_digest(
             new_articles
@@ -131,11 +160,21 @@ def main():
             digest
         )
 
+
+        for article in new_articles:
+
+            add_seen(
+                article["link"],
+                state
+            )
+
+
     else:
 
         print(
             "No new articles found"
         )
+
 
 
     save_state(
@@ -148,5 +187,7 @@ def main():
     )
 
 
+
 if __name__ == "__main__":
+
     main()

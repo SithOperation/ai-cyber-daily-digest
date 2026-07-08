@@ -1,103 +1,59 @@
-from config import (
-    RSS_FEEDS,
-    STATE_FILE,
-    OUTPUT_FILE,
-    MAX_ARTICLES
-)
-
 from feeds import collect_articles
+from summarizer import summarize_articles
+from state import load_state, save_state, already_seen, add_seen
+import os
+import requests
 
-from state import (
-    load_state,
-    save_state
-)
 
-from summarizer import (
-    create_digest
-)
+def send_discord(message):
 
-from pathlib import Path
+    webhook = os.getenv(
+        "DISCORD_WEBHOOK_URL"
+    )
 
+    if not webhook:
+        return
+
+    requests.post(
+        webhook,
+        json={
+            "content": message
+        }
+    )
 
 
 def main():
 
-    print(
-        "[+] Starting AI Cyber Digest"
-    )
+    state = load_state()
 
+    articles = collect_articles()
 
-    state = load_state(
-        STATE_FILE
-    )
-
-
-    seen=set(
-        state["seen_links"]
-    )
-
-
-    articles = collect_articles(
-        RSS_FEEDS,
-        seen
-    )
-
-
-    if not articles:
-
-        print(
-            "No new intelligence found"
-        )
-
-        return
-
-
-    articles = articles[
-        :MAX_ARTICLES
-    ]
-
-
-    digest=create_digest(
-        articles
-    )
-
-
-    Path(
-        OUTPUT_FILE
-    ).parent.mkdir(
-        exist_ok=True
-    )
-
-
-    with open(
-        OUTPUT_FILE,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        f.write(
-            digest
-        )
-
+    new_articles = []
 
     for article in articles:
 
-        state["seen_links"].append(
-            article["link"]
+        if not already_seen(
+            article["link"],
+            state
+        ):
+            new_articles.append(article)
+            add_seen(
+                article["link"],
+                state
+            )
+
+
+    if new_articles:
+
+        digest = summarize_articles(
+            new_articles
         )
 
-
-    save_state(
-        STATE_FILE,
-        state
-    )
+        send_discord(digest)
 
 
-    print(
-        "[+] Digest complete"
-    )
+    save_state(state)
 
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     main()

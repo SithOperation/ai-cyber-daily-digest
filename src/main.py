@@ -1,16 +1,25 @@
 from pathlib import Path
+import json
 import os
 import requests
 
+
 from config import (
     RSS_FEEDS,
-    OUTPUT_FILE,
-    MAX_ARTICLES
+    MAX_ARTICLES,
+    DIGEST_FILE,
+    MARKDOWN_OUTPUT
 )
+
 
 from feeds import collect_articles
 
-from summarizer import create_digest
+
+from ranker import rank_articles
+
+
+from summarizer import build_digest
+
 
 from state import (
     load_state,
@@ -18,6 +27,7 @@ from state import (
     already_seen,
     add_seen
 )
+
 
 
 def send_discord(message):
@@ -34,7 +44,6 @@ def send_discord(message):
         )
 
         return
-
 
 
     response = requests.post(
@@ -56,32 +65,121 @@ def send_discord(message):
 
 
 
-def save_digest_file(digest):
+def save_json_digest(digest):
 
-    output_path = Path(
-        OUTPUT_FILE
+    path = Path(
+        DIGEST_FILE
     )
 
 
-    output_path.parent.mkdir(
+    path.parent.mkdir(
         parents=True,
         exist_ok=True
     )
 
 
     with open(
-        output_path,
+
+        path,
+
         "w",
+
         encoding="utf-8"
+
     ) as file:
 
+
+        json.dump(
+
+            digest,
+
+            file,
+
+            indent=2,
+
+            ensure_ascii=False
+
+        )
+
+
+
+def save_markdown(digest):
+
+
+    path = Path(
+        MARKDOWN_OUTPUT
+    )
+
+
+    path.parent.mkdir(
+
+        parents=True,
+
+        exist_ok=True
+
+    )
+
+
+    output = "# AI Cyber Daily Digest\n\n"
+
+
+    output += (
+        "Top cybersecurity and AI intelligence reports\n\n"
+    )
+
+
+    for index, story in enumerate(
+
+        digest["stories"],
+
+        start=1
+
+    ):
+
+
+        output += f"""
+
+## {index}. {story['title']}
+
+
+**Source:** {story['source']}
+
+
+**Category:** {story['category']}
+
+
+{story['summary']}
+
+
+Read More:
+
+{story['link']}
+
+
+---
+
+"""
+
+
+    with open(
+
+        path,
+
+        "w",
+
+        encoding="utf-8"
+
+    ) as file:
+
+
         file.write(
-            digest
+            output
         )
 
 
 
 def main():
+
 
     print(
         "Loading state..."
@@ -89,6 +187,7 @@ def main():
 
 
     state = load_state()
+
 
 
     print(
@@ -106,8 +205,11 @@ def main():
 
 
     print(
-        f"Articles collected: {len(articles)}"
+
+        f"Collected {len(articles)} articles"
+
     )
+
 
 
     new_articles = []
@@ -117,69 +219,140 @@ def main():
 
 
         if not already_seen(
+
             article["link"],
+
             state
+
         ):
+
 
             new_articles.append(
                 article
             )
 
 
-        if len(new_articles) >= MAX_ARTICLES:
 
-            break
+    if not new_articles:
 
-
-
-    print(
-        f"New articles: {len(new_articles)}"
-    )
-
-
-
-    if new_articles:
-
-
-        print(
-            "Creating digest..."
-        )
-
-
-        digest = create_digest(
-            new_articles
-        )
-
-
-        save_digest_file(
-            digest
-        )
-
-
-        send_discord(
-            digest
-        )
-
-
-        for article in new_articles:
-
-            add_seen(
-                article["link"],
-                state
-            )
-
-
-    else:
 
         print(
             "No new articles found"
         )
 
 
+        save_state(
+            state
+        )
+
+
+        return
+
+
+
+    print(
+        "Ranking articles..."
+    )
+
+
+    ranked_articles = rank_articles(
+
+        new_articles
+
+    )
+
+
+
+    top_articles = ranked_articles[:MAX_ARTICLES]
+
+
+
+    print(
+        "Building digest..."
+    )
+
+
+    digest = build_digest(
+
+        top_articles
+
+    )
+
+
+
+    print(
+        "Saving JSON digest..."
+    )
+
+
+    save_json_digest(
+
+        digest
+
+    )
+
+
+
+    print(
+        "Saving markdown digest..."
+    )
+
+
+    save_markdown(
+
+        digest
+
+    )
+
+
+
+    discord_message = (
+
+        "🛡 AI Cyber Daily Digest\n\n"
+
+    )
+
+
+    for story in digest["stories"]:
+
+
+        discord_message += (
+
+            f"🔥 {story['title']}\n"
+
+            f"{story['link']}\n\n"
+
+        )
+
+
+
+    send_discord(
+
+        discord_message
+
+    )
+
+
+
+    for article in top_articles:
+
+
+        add_seen(
+
+            article["link"],
+
+            state
+
+        )
+
+
 
     save_state(
+
         state
+
     )
+
 
 
     print(

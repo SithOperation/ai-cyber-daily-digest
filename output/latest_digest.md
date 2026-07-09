@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV
+## 1. Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges
 
 
 **Source:** The Hacker News
@@ -13,17 +13,14 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.
+Microsoft has released security updates for a Defender vulnerability known as RoguePlanet, nearly a month after details of the flaw became public.
 
-The vulnerabilities are listed below -
-
-
-  CVE-2026-48282 (CVSS score: 10.0) - A path traversal vulnerability in Adobe ColdFusion that could lead to arbitrary code execution in the context of the
+The vulnerability, tracked as CVE-2026-50656 (CVSS score: 7.8), is a privilege escalation issue in the Microsoft Malware Protection Engine ("mpengine.dll"), which provides scanning, detection, and cleaning capabilities for its antivirus and
 
 
 Read More:
 
-https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html
+https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html
 
 
 ---

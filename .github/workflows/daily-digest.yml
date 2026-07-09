@@ -12,11 +12,9 @@ on:
 
 
 
-
 permissions:
 
   contents: write
-
 
 
 
@@ -30,7 +28,6 @@ jobs:
 
 
 
-
     steps:
 
 
@@ -38,6 +35,8 @@ jobs:
 
         uses: actions/checkout@v4
 
+        with:
+          fetch-depth: 0
 
 
 
@@ -51,7 +50,6 @@ jobs:
 
 
 
-
       - name: Install dependencies
 
         run: |
@@ -59,8 +57,6 @@ jobs:
           python -m pip install --upgrade pip
 
           pip install -r requirements.txt
-
-
 
 
 
@@ -76,30 +72,16 @@ jobs:
 
 
 
-
-
-      - name: Verify generated files
+      - name: Verify files
 
         run: |
-
-          echo "Checking generated files..."
-
-          ls -la data
-
-          ls -la output
-
-
 
           test -f data/ai_cyber_digest.json
 
           test -f data/ai_cyber_digest_state.json
 
 
-
-          echo "Digest files verified."
-
-
-
+          echo "Files verified"
 
 
 
@@ -107,17 +89,16 @@ jobs:
 
         run: |
 
-
-          python3 <<EOF
+          python - <<'PY'
 
           import json
 
 
           files = [
 
-              "data/ai_cyber_digest.json",
+          "data/ai_cyber_digest.json",
 
-              "data/ai_cyber_digest_state.json"
+          "data/ai_cyber_digest_state.json"
 
           ]
 
@@ -128,17 +109,14 @@ jobs:
 
                   json.load(f)
 
-              print(file, "valid")
 
-          EOF
+              print(file,"valid")
 
-
-
+          PY
 
 
 
-      - name: Commit digest updates
-
+      - name: Commit updates
 
         run: |
 
@@ -157,7 +135,7 @@ jobs:
 
           if git diff --cached --quiet; then
 
-              echo "No changes detected."
+              echo "No changes"
 
               exit 0
 

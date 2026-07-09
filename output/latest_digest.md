@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Ubiquiti Patches Critical UniFi Flaws Across Connect, Talk, Access, Protect, and OS
+## 1. Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities
 
 
 **Source:** The Hacker News
@@ -13,17 +13,14 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-Ubiquiti has shipped updates to address multiple critical security flaws impacting UniFi Connect, UniFi Talk, UniFi Access, UniFi Protect, and UniFi OS that could result in privilege escalation and arbitrary command execution.
+A suspected China-aligned threat activity cluster has been observed exploiting Roundcube webmail software belonging to physics and engineering departments of U.S. and Canadian universities as part of a new campaign.
 
-The list of vulnerabilities is as follows -
-
-
-  CVE-2026-50746 (CVSS score: 10.0) - An improper access control vulnerability in UniFi Connect Application that an attacker
+The activity involves the exploitation of now-patched, critical security flaws in the open-source email solution, such as CVE-2024-42009 (CVSS score: 9.3), to siphon credentials,
 
 
 Read More:
 
-https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html
+https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html
 
 
 ---

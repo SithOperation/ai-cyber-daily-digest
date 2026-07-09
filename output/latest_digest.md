@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA
+## 1. Ubiquiti Patches Critical UniFi Flaws Across Connect, Talk, Access, Protect, and OS
 
 
 **Source:** The Hacker News
@@ -13,17 +13,17 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-BeyondTrust has released updates to address two critical security flaws affecting Remote Support (RS) and Privileged Remote Access (PRA) products that, if successfully exploited, could allow unauthenticated attackers to take control of susceptible devices.
+Ubiquiti has shipped updates to address multiple critical security flaws impacting UniFi Connect, UniFi Talk, UniFi Access, UniFi Protect, and UniFi OS that could result in privilege escalation and arbitrary command execution.
 
-The vulnerabilities are listed below -
+The list of vulnerabilities is as follows -
 
 
-  CVE-2026-40138 (CVSS score: 9.2) - A pre-authentication vulnerability exists in the
+  CVE-2026-50746 (CVSS score: 10.0) - An improper access control vulnerability in UniFi Connect Application that an attacker
 
 
 Read More:
 
-https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html
+https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html
 
 
 ---

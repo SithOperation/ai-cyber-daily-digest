@@ -1,46 +1,80 @@
-def summarize(article):
-
-    title = article["title"]
-
-    summary = article["summary"]
+from datetime import datetime, timezone
 
 
-    return f"""
-## {title}
-
-**Source:** {article['source']}
-
-{summary[:500]}
-
-**Security Impact:**
-
-Analyst review recommended.
-Evaluate affected systems,
-exposure,
-and mitigation requirements.
-
-Link:
-{article['link']}
-
----
-"""
+def build_digest(articles):
 
 
-def create_digest(articles):
-
-    output = """
-# AI Cyber Digest
-
-Top 5 AI + Cybersecurity Intelligence Reports
-
-"""
+    stories = []
 
 
     for article in articles:
 
-        output += summarize(
-            article
-        )
+
+        stories.append({
+
+            "title":
+                article["title"],
 
 
-    return output
+            "source":
+                article["source"],
+
+
+            "summary":
+                article["summary"][:500],
+
+
+            "link":
+                article["link"],
+
+
+            "category":
+                determine_category(article),
+
+
+            "score":
+                article.get(
+                    "score",
+                    0
+                )
+
+        })
+
+
+    return {
+
+        "generated":
+
+            datetime.now(
+                timezone.utc
+            ).isoformat(),
+
+
+        "stories":
+
+            stories
+
+    }
+
+
+
+def determine_category(article):
+
+
+    text = (
+
+        article["title"]
+
+        +
+
+        article["summary"]
+
+    ).lower()
+
+
+    if "ai" in text or "artificial intelligence" in text:
+
+        return "Artificial Intelligence"
+
+
+    return "Cybersecurity"

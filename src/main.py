@@ -15,7 +15,10 @@ from config import (
 from feeds import collect_articles
 
 
-from ranker import rank_articles
+from ranker import (
+    rank_articles,
+    diversify_articles
+)
 
 
 from summarizer import build_digest
@@ -263,7 +266,13 @@ def main():
 
 
 
-    top_articles = ranked_articles[:MAX_ARTICLES]
+    top_articles = diversify_articles(
+
+    ranked_articles,
+
+    MAX_ARTICLES
+
+    )
 
 
 

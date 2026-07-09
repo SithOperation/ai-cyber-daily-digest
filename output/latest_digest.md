@@ -1,111 +1,121 @@
+# AI Cyber Daily Digest
 
-# AI Cyber Digest
-
-Top 5 AI + Cybersecurity Intelligence Reports
+Top cybersecurity and AI intelligence reports
 
 
-## China-Linked UAT-7810 Expands ORB Network With New LONGLEASH Malware
 
-**Source:** The Hacker News
+## 1. Top AI Agents Built to Catch Malicious Code Can Be Tricked Into Running It
 
-A Chinese threat actor tracked as UAT-7810 is actively refining its bespoke malware to expand its Operational Relay Box (ORB) network by breaking into internet-facing networking devices.
-
-According to findings from Cisco Talos, UAT-7810 is an advanced persistent threat (APT) actor that's responsible for maintaining and proliferating LapDogs, an ORB network that first came to light in June 2025.
-
-**Security Impact:**
-
-Analyst review recommended.
-Evaluate affected systems,
-exposure,
-and mitigation requirements.
-
-Link:
-https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html
-
----
-
-## Public GitHub Issue Could Trick GitHub Agentic Workflows Into Leaking Private Repo Data
 
 **Source:** The Hacker News
 
-A public issue can trick GitHub Agentic Workflows into leaking the contents of an organization's private repositories, researchers at Noma Security have shown.
 
-The attacker needs only to open a normal-looking issue on a public repository, with no stolen credentials and no access to the organization. If that organization has given the agent read access across its repositories, private ones
+**Category:** Artificial Intelligence
 
-**Security Impact:**
 
-Analyst review recommended.
-Evaluate affected systems,
-exposure,
-and mitigation requirements.
+Ask an AI coding agent to scan open-source code for security holes, and it might run the attacker's code on your own machine instead.
 
-Link:
-https://thehackernews.com/2026/07/public-github-issue-could-trick-github.html
+That is the finding in a&nbsp;proof-of-concept published Wednesday&nbsp;by the AI Now Institute, an attack it calls "Friendly Fire." It works against Anthropic's Claude Code and OpenAI's Codex when either is running in an autonomous mode that approves its own
+
+
+Read More:
+
+https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html
+
 
 ---
 
-## Court Filing Reveals Windows Device ID Helped FBI Trace Alleged Scattered Spider Hacker
+
+
+## 2. AI Coding Agents Found Triggering Endpoint Security Rules Built to Catch Attackers
+
 
 **Source:** The Hacker News
 
-U.S. prosecutors linked an alleged Scattered Spider hacker to a break-in at a luxury jewelry retailer using a persistent Windows device ID, according to a newly unsealed federal complaint.
 
-Microsoft records tied that ID first to the account the attackers used to keep access during the May 2025 intrusion, then to online accounts prosecutors say belong to 19-year-old Peter Stokes.
+**Category:** Artificial Intelligence
 
-Stokes is
 
-**Security Impact:**
+Sophos looked at a week of its own endpoint data and found that AI coding agents such as Claude Code, Cursor, and OpenAI Codex are setting off detection rules written to catch human intruders.
 
-Analyst review recommended.
-Evaluate affected systems,
-exposure,
-and mitigation requirements.
+The agents are not malicious. They just do a lot of things that, to a behavioral engine, look exactly like an attack.
 
-Link:
-https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html
+Decrypting browser credentials, listing what sits in Windows' credential store,
+
+
+Read More:
+
+https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html
+
 
 ---
 
-## Writer AI Flaw Could Let Agent Previews Leak Session Tokens Across Tenants
+
+
+## 3. New HalluSquatting Attack Could Trick AI Coding Assistants Into Installing Botnet Malware
+
 
 **Source:** The Hacker News
 
-Cybersecurity researchers have disclosed details of a now-patched critical session isolation vulnerability in Writer, an enterprise generative artificial intelligence (AI) platform, that could result in cross-tenant compromise.
 
-The one-click vulnerability has been codenamed WriteOut by the Sand Security Research team.
+**Category:** Artificial Intelligence
 
-"An outsider could go from having no access to taking over any Writer AI
 
-**Security Impact:**
+AI coding assistants have a habit of making things up. Ask one to fetch a popular tool, and it will sometimes hand back a real-sounding name for a project that does not exist.
 
-Analyst review recommended.
-Evaluate affected systems,
-exposure,
-and mitigation requirements.
+New research, which its authors call&nbsp;HalluSquatting, turns that habit into an attack: work out the fake names an AI reliably invents, register them first, and wait for the assistant to fetch your trap on a user's
 
-Link:
-https://thehackernews.com/2026/07/writer-ai-flaw-could-let-agent-previews.html
+
+Read More:
+
+https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html
+
 
 ---
 
-## What Changes When Your Software Supply Chain Includes AI Writing Your Code?
+
+
+## 4. Fake 7-Zip Installers Turn Devices Into Residential Proxy Nodes
+
 
 **Source:** The Hacker News
 
-Software supply chain security was hard enough. Then AI joined the build pipeline.
 
-For five years, "software supply chain security" meant one question: what's in your code? Which open-source packages, which versions, which transitive dependencies three layers deep that nobody chose on purpose? 
+**Category:** Artificial Intelligence
 
-SolarWinds, Log4Shell, and XZ Utils all taught the same lesson: the risk lives less in the code a
 
-**Security Impact:**
+Cybersecurity researchers have disclosed details of a new threat actor dubbed Lurking Lizard that has been operating an end-to-end malicious residential proxy business using an infrastructure comprising more than 230 lookalike domains.
 
-Analyst review recommended.
-Evaluate affected systems,
-exposure,
-and mitigation requirements.
+The activity dates back to at least August 2022, according to DNS threat intelligence firm Infoblox. Once such campaign, observed earlier this year, involved the
 
-Link:
-https://thehackernews.com/2026/07/what-changes-when-your-software-supply.html
+
+Read More:
+
+https://thehackernews.com/2026/07/fake-7-zip-installers-turn-devices-into.html
+
 
 ---
+
+
+
+## 5. GhostApproval Symlink Flaws Could Let Malicious Repos Run Code in AI Coding Agents
+
+
+**Source:** The Hacker News
+
+
+**Category:** Artificial Intelligence
+
+
+Researchers at&nbsp;Wiz&nbsp;found that a flaw in six popular AI coding assistants lets a booby-trapped code project quietly take control of a developer's computer. The assistant asks permission to edit one harmless-looking file, but the write lands on a sensitive one instead.
+
+The affected tools are Amazon Q Developer, Anthropic's Claude Code, Augment, Cursor, Google Antigravity, and Windsurf.
+
+
+Read More:
+
+https://thehackernews.com/2026/07/ghostapproval-symlink-flaws-could-let.html
+
+
+---
+

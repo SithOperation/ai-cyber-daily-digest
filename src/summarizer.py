@@ -1,10 +1,13 @@
 from datetime import datetime, timezone
 
 
+
+
 def build_digest(articles):
 
 
     stories = []
+
 
 
     for article in articles:
@@ -12,27 +15,43 @@ def build_digest(articles):
 
         stories.append({
 
+
             "title":
+
                 article["title"],
 
 
+
             "source":
+
                 article["source"],
 
 
+
             "summary":
-                article["summary"][:500],
+
+                clean_summary(
+                    article["summary"]
+                ),
+
 
 
             "link":
+
                 article["link"],
 
 
+
             "category":
-                determine_category(article),
+
+                determine_category(
+                    article
+                ),
+
 
 
             "score":
+
                 article.get(
                     "score",
                     0
@@ -41,13 +60,16 @@ def build_digest(articles):
         })
 
 
+
     return {
+
 
         "generated":
 
             datetime.now(
                 timezone.utc
             ).isoformat(),
+
 
 
         "stories":
@@ -58,23 +80,95 @@ def build_digest(articles):
 
 
 
+
+
+def clean_summary(text):
+
+
+    if not text:
+
+        return "No summary available."
+
+
+
+    return (
+
+        text
+
+        .replace(
+            "&nbsp;",
+            " "
+        )
+
+        .replace(
+            "&quot;",
+            '"'
+        )
+
+        [:500]
+
+    )
+
+
+
+
+
 def determine_category(article):
 
 
     text = (
 
-        article["title"]
+        article.get(
+            "title",
+            ""
+
+        )
 
         +
 
-        article["summary"]
+        article.get(
+            "summary",
+            ""
+
+        )
 
     ).lower()
 
 
-    if "ai" in text or "artificial intelligence" in text:
+
+    ai_terms = [
+
+        "artificial intelligence",
+
+        "ai ",
+
+        "ai-",
+
+        "machine learning",
+
+        "llm",
+
+        "large language model",
+
+        "coding agent",
+
+        "generative ai"
+
+    ]
+
+
+
+    if any(
+
+        term in text
+
+        for term in ai_terms
+
+    ):
+
 
         return "Artificial Intelligence"
+
 
 
     return "Cybersecurity"

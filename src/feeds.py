@@ -1,5 +1,7 @@
 import feedparser
+
 from config import MAX_ARTICLES
+
 
 
 def collect_articles(feeds, seen):
@@ -8,6 +10,7 @@ def collect_articles(feeds, seen):
 
 
     for url in feeds:
+
 
         print(
             f"Reading feed: {url}"
@@ -19,7 +22,14 @@ def collect_articles(feeds, seen):
         )
 
 
+        source_name = feed.feed.get(
+            "title",
+            "Unknown"
+        )
+
+
         for item in feed.entries:
+
 
             link = item.get(
                 "link",
@@ -28,11 +38,15 @@ def collect_articles(feeds, seen):
 
 
             if not link:
+
                 continue
+
 
 
             if link in seen:
+
                 continue
+
 
 
             articles.append({
@@ -43,8 +57,10 @@ def collect_articles(feeds, seen):
                         "Unknown"
                     ),
 
+
                 "link":
                     link,
+
 
                 "summary":
                     item.get(
@@ -52,18 +68,27 @@ def collect_articles(feeds, seen):
                         ""
                     ),
 
+
                 "source":
-                    feed.feed.get(
-                        "title",
-                        "Unknown"
-                    )
+                    source_name
 
             })
 
 
-            if len(articles) >= MAX_ARTICLES:
 
-                return articles
+            # Collect more than we need.
+            # Ranking happens later.
+
+            if len(articles) >= MAX_ARTICLES * 5:
+
+                break
+
+
+
+        if len(articles) >= MAX_ARTICLES * 5:
+
+            break
+
 
 
     return articles

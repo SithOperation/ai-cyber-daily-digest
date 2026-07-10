@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges
+## 1. Attackers Exploit 'Ill Bloom' Vulnerability to Drain $3.1 Million From Cryptocurrency Wallets
 
 
 **Source:** The Hacker News
@@ -13,14 +13,14 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-Microsoft has released security updates for a Defender vulnerability known as RoguePlanet, nearly a month after details of the flaw became public.
+Security firm Coinspect has disclosed a crypto wallet flaw it calls Ill Bloom, and attackers are already using it. The flaw is in how some wallet software generated its recovery phrase, the words that control the money. When that phrase is made with weak randomness, an attacker can work it out and take everything it controls.
 
-The vulnerability, tracked as CVE-2026-50656 (CVSS score: 7.8), is a privilege escalation issue in the Microsoft Malware Protection Engine ("mpengine.dll"), which provides scanning, detection, and cleaning capabilities for its antivirus and
+Coinspect has confirmed one coordinated sweep on May
 
 
 Read More:
 
-https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html
+https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html
 
 
 ---

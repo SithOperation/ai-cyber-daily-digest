@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Attackers Exploit 'Ill Bloom' Vulnerability to Drain $3.1 Million From Cryptocurrency Wallets
+## 1. Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions
 
 
 **Source:** The Hacker News
@@ -13,14 +13,16 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-Security firm Coinspect has disclosed a crypto wallet flaw it calls Ill Bloom, and attackers are already using it. The flaw is in how some wallet software generated its recovery phrase, the words that control the money. When that phrase is made with weak randomness, an attacker can work it out and take everything it controls.
+Zimbra is urging customers to apply updates to address a critical security vulnerability impacting the Classic Web Client that could result in arbitrary code execution.
 
-Coinspect has confirmed one coordinated sweep on May
+The vulnerability has been described as a case of stored cross-site scripting (XSS) that could allow specially crafted emails to execute malicious scripts in a user's session. It has yet to be assigned a CVE identifier.
+
+"The
 
 
 Read More:
 
-https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html
+https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html
 
 
 ---

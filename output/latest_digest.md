@@ -4,26 +4,26 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws
+## 1. iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited as Zero-Days
 
 
 **Source:** The Hacker News
 
 
-**Category:** Artificial Intelligence
+**Category:** Cybersecurity
 
 
-Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two maximum-severity security flaws impacting iCagenda and Balbooa extensions for Joomla to its Known Exploited Vulnerabilities (KEV) catalog, following reports of zero-day exploitation in the wild.
 
-A brief description of the high-severity vulnerabilities is as follows -
+The vulnerabilities, both rated 10.0 on the CVSS scoring system, are below -
 
 
-  GHSA-hjr6-g723-hmfm (CVSS score: 8.8) - An operating system
+  CVE-2026-48939 - A vulnerability in the
 
 
 Read More:
 
-https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html
+https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html
 
 
 ---

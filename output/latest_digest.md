@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack
+## 1. Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands
 
 
 **Source:** The Hacker News
@@ -13,14 +13,17 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-Microsoft shipped its largest Patch Tuesday on record today, and two of the fixes close holes that attackers are already exploiting. The release covers 622 of Microsoft's own CVEs by its Security Update Guide count, more than triple June's previous high of around 200.
+SonicWall has warned of active exploitation of two zero-day vulnerabilities impacting Secure Mobile Access (SMA) 1000 series appliances, one of which could be exploited to achieve arbitrary command execution.
 
-Those two live bugs are the ones to grab first. Microsoft credits incident responders for both. Both are
+The vulnerabilities are listed below -
+
+
+  CVE-2026-15409 (CVSS score: 10.0) - A Server-side request forgery (SSRF) vulnerability that a remote unauthenticated attacker could exploit to
 
 
 Read More:
 
-https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html
+https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html
 
 
 ---

@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands
+## 1. CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV
 
 
 **Source:** The Hacker News
@@ -13,17 +13,14 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-SonicWall has warned of active exploitation of two zero-day vulnerabilities impacting Secure Mobile Access (SMA) 1000 series appliances, one of which could be exploited to achieve arbitrary command execution.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly patched security flaw impacting Microsoft SharePoint Server to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by July 19, 2026.
 
-The vulnerabilities are listed below -
-
-
-  CVE-2026-15409 (CVSS score: 10.0) - A Server-side request forgery (SSRF) vulnerability that a remote unauthenticated attacker could exploit to
+The vulnerability in question is CVE-2026-58644 (CVSS score: 9.8), a critical deserialization
 
 
 Read More:
 
-https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html
+https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html
 
 
 ---

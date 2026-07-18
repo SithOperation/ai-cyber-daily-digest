@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV
+## 1. Zoom Patches Critical Windows Flaw That Could Enable Account Takeover
 
 
 **Source:** The Hacker News
@@ -13,14 +13,16 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly patched security flaw impacting Microsoft SharePoint Server to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by July 19, 2026.
+Zoom has released security updates for a critical security flaw impacting Zoom Workplace for Windows that could facilitate account takeover.
 
-The vulnerability in question is CVE-2026-58644 (CVSS score: 9.8), a critical deserialization
+The vulnerability, tracked as CVE-2026-53412 (CVSS score: 9.8), affects Zoom Workplace for Windows before version 7.0.0 and Zoom Workplace VDI Client for Windows before version 7.0.10, 6.6.15, and 6.5.18 in their respective branches.
+
+"Improper Input
 
 
 Read More:
 
-https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html
+https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html
 
 
 ---

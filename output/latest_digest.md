@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Zoom Patches Critical Windows Flaw That Could Enable Account Takeover
+## 1. Firefox, Chrome, Adobe, and VMware Updates Fix Multiple Critical Security Flaws
 
 
 **Source:** The Hacker News
@@ -13,16 +13,20 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-Zoom has released security updates for a critical security flaw impacting Zoom Workplace for Windows that could facilitate account takeover.
+Mozilla has released updates to address two critical flaws in Firefox for which it warned that exploit code has been published.
 
-The vulnerability, tracked as CVE-2026-53412 (CVSS score: 9.8), affects Zoom Workplace for Windows before version 7.0.0 and Zoom Workplace VDI Client for Windows before version 7.0.10, 6.6.15, and 6.5.18 in their respective branches.
+The vulnerabilities are listed below -
 
-"Improper Input
+
+  CVE-2026-15718, an invalid pointer in the JavaScript: WebAssembly component
+  CVE-2026-15719, a site isolation in the DOM: Navigation component
+
+"We are aware that exploit code for this is public, however we are not aware of
 
 
 Read More:
 
-https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html
+https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html
 
 
 ---

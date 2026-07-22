@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning
+## 1. Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC
 
 
 **Source:** The Hacker News
@@ -13,16 +13,14 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-Attackers have begun to exploit two critical vulnerabilities in WordPress that, when combined together, enable unauthenticated remote code execution (RCE) and complete compromise of vulnerable websites.
+A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr.
 
-The two security flaws, tracked as CVE-2026-63030 and CVE-2026-60137, have been codenamed wp2shell.
-
-"By the early hours of Saturday morning (UTC), successful exploitation was already well
+The vulnerability in question is CVE-2026-50522 (CVSS score: 9.8), a critical deserialization of untrusted data in Microsoft Office SharePoint that could allow an unauthorized attacker to execute code over a network. Microsoft credited DEVCORE
 
 
 Read More:
 
-https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html
+https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html
 
 
 ---

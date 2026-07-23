@@ -4,7 +4,7 @@ Top cybersecurity and AI intelligence reports
 
 
 
-## 1. Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC
+## 1. Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication
 
 
 **Source:** The Hacker News
@@ -13,14 +13,16 @@ Top cybersecurity and AI intelligence reports
 **Category:** Cybersecurity
 
 
-A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr.
+A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.
 
-The vulnerability in question is CVE-2026-50522 (CVSS score: 9.8), a critical deserialization of untrusted data in Microsoft Office SharePoint that could allow an unauthorized attacker to execute code over a network. Microsoft credited DEVCORE
+The vulnerability in question is CVE-2026-29059 (CVSS score: 7.5), a case of unauthenticated path traversal impacting Windmill's "get_log_file" endpoint ("/api/w/{workspace}/jobs_u/get_log_file/{filename}").
+
+"The filename parameter is concatenated into
 
 
 Read More:
 
-https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html
+https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html
 
 
 ---

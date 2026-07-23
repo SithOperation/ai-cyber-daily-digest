@@ -1,212 +1,184 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-07-23T13:49:32.072238+00:00
+Generated: 2026-07-23T14:15:18.376487+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
 ## Critical stories
 
-### [CISA Adds Four Known Exploited Vulnerabilities to Catalog](https://www.cisa.gov/news-events/alerts/2026/07/21/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+### [CISA Adds Two Known Exploited Vulnerabilities to Catalog](https://www.cisa.gov/news-events/alerts/2026/07/22/cisa-adds-two-known-exploited-vulnerabilities-catalog)
 
 **Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
 
-CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
+CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
-**CVEs:** CVE-2021-27137, CVE-2026-0770, CVE-2026-60137, CVE-2026-63030
-
-## High-priority stories
-
-### [Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access](https://thehackernews.com/2026/07/check-point-patches-exploited.html)
-
-**High · Active Exploitation · Score 51 · The Hacker News**
-
-Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active exploitation in the wild.
-
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
-
-**CVEs:** CVE-2026-16232
-
-### [Check Point warns of SmartConsole zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/check-point-patches-smartconsole-zero-day-exploited-in-attacks/)
-
-**High · Active Exploitation · Score 43 · BleepingComputer**
-
-Israeli cybersecurity firm Check Point Software has addressed an actively exploited zero-day flaw in the company's SmartConsole graphical user interface (GUI) admin panel.
-
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+**CVEs:** CVE-2026-16232, CVE-2026-50522
 
 ## Other notable developments
 
-### [Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access](https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html)
+### [Upbound Group Says Data Breach Led to $13 Million in Fraudulent Contract Losses](https://www.securityweek.com/upbound-group-says-data-breach-led-to-13-million-in-fraudulent-contract-losses/)
 
-**Medium · Ransomware · Score 26 · The Hacker News**
+**Low · Data Breaches · Score 10 · SecurityWeek**
 
-Threat actors have been observed exploiting a now-patched high-severity Palo Alto Networks PAN-OS vulnerability as an entry point to deploy Qilin (aka Agenda) ransomware on victim environments.
+Hackers recently obtained non-sensitive customer information and other documents from the company.
 
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-**CVEs:** CVE-2026-0257
+### [South Korea discloses data breach impacting diplomats worldwide](https://www.bleepingcomputer.com/news/security/south-korea-discloses-data-breach-impacting-diplomats-worldwide/)
 
-### [CISA orders urgent action on actively exploited Langflow RCE flaw](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/)
+**Low · Data Breaches · Score 10 · BleepingComputer**
 
-**Medium · Active Exploitation · Score 25 · BleepingComputer**
+South Korea disclosed that hackers breached the National Diplomatic Academy's online education system for ten months and stole personal information belonging to current and former employees of the Ministry of Foreign Affairs (MFA), including overseas diplomats.
 
-The Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday ordered U.S.
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+### [Suno, Paidwork Data Breaches Affect Tens of Millions of Accounts](https://www.securityweek.com/suno-paidwork-data-breaches-affect-tens-of-millions-of-accounts/)
 
-### [Tycon Systems TPDIN-Monitor-WEB2](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-01)
+**Low · Data Breaches · Score 10 · SecurityWeek**
 
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+Hackers leaked names, email addresses, phone numbers, passwords, and financial information stolen from the two platforms.
 
-View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker accessing sensitive credentials, disrupting connected infrastructure, or manipulating physical equipment, which could present a physical safety risk.
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+### [Nine-Year-Old RefluXFS Linux Flaw Gives Local Users Root on Default RHEL Installs](https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html)
 
-**CVEs:** CVE-2026-61884
+**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-### [Siemens SIDIS Secured SmartPlug](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-04)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary SIDIS Secured SmartPlug before V7.26.0310 is affected by multiple vulnerabilities in the components OpenSSL, OpenSSH, and several other packages as described below.
+RefluXFS, a new Linux kernel flaw disclosed on July 22 and tracked as CVE-2026-64600, lets an unprivileged local user overwrite root-owned files on an XFS filesystem and gain persistent root access.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2019-9494, CVE-2019-9495, CVE-2022-23303, CVE-2022-23304
+**CVEs:** CVE-2026-64600
 
-### [Siemens IAM Client](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-05)
+### [Microsoft to stop Exchange 2016 / 2019 security updates in October](https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/)
 
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+**Low · General Cybersecurity · Score 4 · BleepingComputer**
 
-View CSAF Summary Multiple Siemens products are affected by unquoted search path vulnerability in IAM Client.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2025-40945
-
-### [Siemens RUGGEDCOM APE1808 with Palo Alto Networks Virtual NGFW](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-02)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Palo Alto Networks has published [1] information on vulnerabilities in PAN-OS.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-0266, CVE-2026-0272
-
-### [Rockwell Automation 1734 POINT I/O](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-09)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow for an attacker to cause a denial-of-service condition on the product.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-10573
-
-### [Rockwell Automation 1718-AENTR/1719-AENTR](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-08)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow for an attacker to cause a denial-of-service condition on the product.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-9140
-
-### [Rockwell Automation Studio 5000 Logix Designer](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-10)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of these vulnerabilities could allow for a local attacker to execute arbitrary files, alter configurations, or execute arbitrary code.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-9108, CVE-2026-9127, CVE-2026-9128
-
-### [Siemens CADRA](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-06)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary CADRA is affected by multiple zlib and Foxit vulnerabilities.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2005-2096, CVE-2016-9840
-
-### [Rockwell Automation FactoryTalk Services Platform](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-07)
-
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to impersonate an authorized user on the FTSP server, resulting in unauthorized access to system configurations.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-10714
-
-### [Siemens Opcenter X](https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-03)
-
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Opcenter X before V2604 contain an authentication bypass vulnerability that could allow an attacker to gain full unauthorized access to the application.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-56451
-
-### [Ubuntu snap-confine Flaw Could Give Local Users Root on Default Desktop Installs](https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html)
-
-**Medium · Critical Vulnerabilities · Score 14 · The Hacker News**
-
-Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a target environment.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-8933
-
-### [Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data](https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html)
-
-**Medium · Critical Vulnerabilities · Score 14 · The Hacker News**
-
-Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a user's WhatsApp data.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-48294
-
-### [New msaRAT malware uses Chrome, Edge browsers to route C2 traffic](https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/)
-
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers.
+Microsoft has reminded customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Swiss rail giant Stadler rejects $12.3M ransom demand after cyberattack](https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/)
+### [FedRAMP Rev5 Is Ending: What the 20x Transition Really Requires](https://www.bleepingcomputer.com/news/security/fedramp-rev5-is-ending-what-the-20x-transition-really-requires/)
 
-**Low · Ransomware · Score 12 · BleepingComputer**
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Swiss rail vehicle manufacturer Stadler Rail says the Everest ransomware gang demanded about $12.3 million after breaching a data exchange platform shared with one of its suppliers.
+FedRAMP 20X replaces point-in-time assessments with continuous, machine-readable evidence that demonstrates security controls are working.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Abstract Raises $25 Million to Expand Composable Security Operations Platform](https://www.securityweek.com/abstract-raises-25-million-to-expand-composable-security-operations-platform/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+The latest investment round brings the total raised by Abstract to nearly $50 million.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [How enterprise GenAI can amplify ransomware risk — and how to contain it](https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/)
+### [Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models](https://www.securityweek.com/nuclear-sabotage-malware-benchmark-trips-up-most-frontier-ai-models/)
 
-**Low · Ransomware · Score 12 · BleepingComputer**
+**Low · Malware · Score 0 · SecurityWeek**
 
-Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities.
+SentinelOne’s new benchmark, built on the Fast16 case, shows which AI models can sustain a malware investigation and which cannot.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [EU fines Google $1 billion for search, app store antitrust violations](https://www.bleepingcomputer.com/news/google/eu-fines-google-1-billion-for-digital-markets-act-breaches-in-search-and-play-store/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+The European Commission fined Google €890 million ($1 billion) on Thursday after finding the company had violated the European Union's Digital Markets Act (DMA), which ensures fair online competition.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [MIT projects selected for funding under US Department of Energy’s Genesis Mission](https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723)
+
+**Low · Critical Vulnerabilities · Score 0 · MIT News AI**
+
+Initial research projects advance national priorities across natural resources, manufacturing, nuclear physics, and more.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [How Synthetic Identity Fraud is Coming for Machine Identities](https://thehackernews.com/2026/07/how-synthetic-identity-fraud-is-coming.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+Most people understand identity theft as an attacker stealing a real person's sensitive information and impersonating them.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers](https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+Cybersecurity researchers have shed light on a large-scale campaign that has turned compromised GitHub repositories into distributed attack infrastructure designed to target cPanel and WebHost Manager (WHM) instances.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Google Adds Selfie Video Recovery for Users Locked Out of Their Accounts](https://thehackernews.com/2026/07/google-adds-selfie-video-recovery-for.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+Google on Thursday announced a new way for users to sign-in to their accounts by letting them take a selfie video.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Assaf Keren Appointed New CISO of Meta](https://www.securityweek.com/assaf-keren-appointed-new-ciso-of-meta/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+He replaces Guy Rosen, who announced his retirement from the company after 13 years.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Microsoft working to fix Exchange Online mailbox quarantine issue](https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [US Warns of Iranian Hackers Targeting Siemens, Schneider, and Rockwell ICS Devices](https://www.securityweek.com/us-warns-of-iranian-hackers-targeting-siemens-schneider-and-rockwell-ics-devices/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+An updated advisory from federal agencies provides information on the techniques used to hack programmable logic controllers.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Upbound says hack caused $13 million in fraudulent Acima leases](https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+The Upbound Group fintech company disclosed that threat actors who stole data from its systems leveraged it to create $13 million in Acima leases.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [GitHub Cuts Public Bug Bounty Payouts, Moves Top Rewards to VIP Tier](https://thehackernews.com/2026/07/github-cuts-public-bug-bounty-payouts.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+Beginning July 27, 2026, GitHub will cut public bug bounty payouts by at least half at every severity level.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Professor Emeritus Dimitri Bertsekas, influential computer scientist and prolific author, dies at 83](https://news.mit.edu/2026/dimitri-bertsekas-influential-computer-scientist-prolific-author-dies-0722)
+
+**Low · Artificial Intelligence · Score 0 · MIT News AI**
+
+Known for his clear and elegant writing style, Bertsekas shaped fields from control and optimization to large-scale computation and artificial intelligence.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
 ## Sources
 
-- The Hacker News: success (22 new)
-- BleepingComputer: success (15 new)
+- The Hacker News: success (18 new)
+- BleepingComputer: success (10 new)
 - Krebs on Security: success (1 new)
 - SecurityWeek: success (10 new)
-- CISA Cybersecurity Advisories: success (12 new)
+- CISA Cybersecurity Advisories: success (1 new)
 - MIT News AI: success (2 new)
 - Google AI: success (1 new)
 - OpenAI News: success (9 new)

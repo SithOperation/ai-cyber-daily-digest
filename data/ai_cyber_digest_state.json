@@ -24,7 +24,27 @@
     "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
     "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
     "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
-    "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html"
+    "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+    "https://www.cisa.gov/news-events/alerts/2026/07/21/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+    "https://www.bleepingcomputer.com/news/security/check-point-patches-smartconsole-zero-day-exploited-in-attacks/",
+    "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
+    "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-01",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-04",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-05",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-02",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-09",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-08",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-10",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-06",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-07",
+    "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-03",
+    "https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+    "https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
+    "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+    "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
+    "https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/"
   ],
-  "last_digest": "2026-07-23T11:04:14.858773+00:00"
+  "last_digest": "2026-07-23T13:49:32.077464+00:00"
 }

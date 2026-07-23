@@ -1,13 +1,882 @@
 {
-  "generated": "2026-07-23T11:04:14.470022+00:00",
+  "generated_at": "2026-07-23T13:49:32.072238+00:00",
+  "source_count": 8,
+  "sources_succeeded": 8,
+  "articles_collected": 72,
+  "articles_after_deduplication": 20,
+  "stories_published": 20,
+  "critical_count": 1,
+  "high_count": 2,
+  "medium_count": 14,
+  "low_count": 3,
+  "source_status": [
+    {
+      "source": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "status": "success",
+      "articles": 22
+    },
+    {
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "status": "success",
+      "articles": 15
+    },
+    {
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "status": "success",
+      "articles": 1
+    },
+    {
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/feed/",
+      "status": "success",
+      "articles": 10
+    },
+    {
+      "source": "CISA Cybersecurity Advisories",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "status": "success",
+      "articles": 12
+    },
+    {
+      "source": "MIT News AI",
+      "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "status": "success",
+      "articles": 2
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/technology/ai/rss/",
+      "status": "success",
+      "articles": 1
+    },
+    {
+      "source": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "status": "success",
+      "articles": 9
+    }
+  ],
   "stories": [
     {
-      "title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
+      "id": "af160bcfd41ad561",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/alerts/2026/07/21/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.965996+00:00",
+      "category": "Active Exploitation",
+      "severity": "Critical",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+      "why_it_matters": "Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2021-27137",
+        "CVE-2026-0770",
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ],
+      "cvss_score": null,
+      "known_exploited": true,
+      "active_exploitation": true,
+      "patch_available": true,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 61,
+      "score_breakdown": [
+        {
+          "signal": "Active exploitation",
+          "points": 25
+        },
+        {
+          "signal": "CISA KEV",
+          "points": 20
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "Patch available",
+          "points": 4
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": [
+        {
+          "source": "CISA Cybersecurity Advisories",
+          "source_url": "https://www.cisa.gov/news-events/alerts/2026/07/22/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        }
+      ]
+    },
+    {
+      "id": "cf457a6325533fbc",
+      "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
       "source": "The Hacker News",
-      "summary": "A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.\n\nThe vulnerability in question is CVE-2026-29059 (CVSS score: 7.5), a case of unauthenticated path traversal impacting Windmill's \"get_log_file\" endpoint (\"/api/w/{workspace}/jobs_u/get_log_file/{filename}\").\n\n\"The filename parameter is concatenated into",
-      "link": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
-      "category": "Cybersecurity",
-      "score": 25
+      "source_url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+      "published_at": "2026-07-23T06:34:36+00:00",
+      "collected_at": "2026-07-23T13:49:29.982381+00:00",
+      "category": "Active Exploitation",
+      "severity": "High",
+      "summary": "Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active exploitation in the wild.",
+      "why_it_matters": "Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-16232"
+      ],
+      "cvss_score": 9.3,
+      "known_exploited": false,
+      "active_exploitation": true,
+      "patch_available": true,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 51,
+      "score_breakdown": [
+        {
+          "signal": "Active exploitation",
+          "points": 25
+        },
+        {
+          "signal": "Critical CVSS",
+          "points": 18
+        },
+        {
+          "signal": "Patch available",
+          "points": 4
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": [
+        {
+          "source": "SecurityWeek",
+          "source_url": "https://www.securityweek.com/new-check-point-zero-day-vulnerability-exploited-in-the-wild/"
+        }
+      ]
+    },
+    {
+      "id": "f359f550fade57a7",
+      "title": "Check Point warns of SmartConsole zero-day exploited in attacks",
+      "source": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/check-point-patches-smartconsole-zero-day-exploited-in-attacks/",
+      "published_at": "2026-07-23T08:13:07+00:00",
+      "collected_at": "2026-07-23T13:49:30.107819+00:00",
+      "category": "Active Exploitation",
+      "severity": "High",
+      "summary": "Israeli cybersecurity firm Check Point Software has addressed an actively exploited zero-day flaw in the company's SmartConsole graphical user interface (GUI) admin panel.",
+      "why_it_matters": "Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": true,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "Zero-Day"
+      ],
+      "importance_score": 43,
+      "score_breakdown": [
+        {
+          "signal": "Active exploitation",
+          "points": 25
+        },
+        {
+          "signal": "Zero-day",
+          "points": 18
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "c18df8f6951c9d56",
+      "title": "Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access",
+      "source": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
+      "published_at": "2026-07-21T14:04:57+00:00",
+      "collected_at": "2026-07-23T13:49:29.983218+00:00",
+      "category": "Ransomware",
+      "severity": "Medium",
+      "summary": "Threat actors have been observed exploiting a now-patched high-severity Palo Alto Networks PAN-OS vulnerability as an entry point to deploy Qilin (aka Agenda) ransomware on victim environments.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-0257"
+      ],
+      "cvss_score": 7.8,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE",
+        "Ransomware"
+      ],
+      "importance_score": 26,
+      "score_breakdown": [
+        {
+          "signal": "High CVSS",
+          "points": 10
+        },
+        {
+          "signal": "Ransomware",
+          "points": 12
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "e26cffc4fd1ffc55",
+      "title": "CISA orders urgent action on actively exploited Langflow RCE flaw",
+      "source": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/",
+      "published_at": "2026-07-22T11:43:28+00:00",
+      "collected_at": "2026-07-23T13:49:30.108232+00:00",
+      "category": "Active Exploitation",
+      "severity": "Medium",
+      "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday ordered U.S.",
+      "why_it_matters": "Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": true,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [],
+      "importance_score": 25,
+      "score_breakdown": [
+        {
+          "signal": "Active exploitation",
+          "points": 25
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "7bd20d10f61c67cd",
+      "title": "Tycon Systems TPDIN-Monitor-WEB2",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-01",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.965439+00:00",
+      "category": "Government Advisories",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker accessing sensitive credentials, disrupting connected infrastructure, or manipulating physical equipment, which could present a physical safety risk.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-61884"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "549cdbd90ba45ddc",
+      "title": "Siemens SIDIS Secured SmartPlug",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-04",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.965879+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary SIDIS Secured SmartPlug before V7.26.0310 is affected by multiple vulnerabilities in the components OpenSSL, OpenSSH, and several other packages as described below.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2019-9494",
+        "CVE-2019-9495",
+        "CVE-2022-23303",
+        "CVE-2022-23304"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "2739ae45440cfaab",
+      "title": "Siemens IAM Client",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-05",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.966201+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Multiple Siemens products are affected by unquoted search path vulnerability in IAM Client.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2025-40945"
+      ],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "04b974621017c61a",
+      "title": "Siemens RUGGEDCOM APE1808 with Palo Alto Networks Virtual NGFW",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-02",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.966436+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Palo Alto Networks has published [1] information on vulnerabilities in PAN-OS.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-0266",
+        "CVE-2026-0272"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "4e657bc8548d12bb",
+      "title": "Rockwell Automation 1734 POINT I/O",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-09",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.966592+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow for an attacker to cause a denial-of-service condition on the product.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-10573"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "8fc73f794dd5983c",
+      "title": "Rockwell Automation 1718-AENTR/1719-AENTR",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-08",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.966744+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow for an attacker to cause a denial-of-service condition on the product.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-9140"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "e104d63b23c462ca",
+      "title": "Rockwell Automation Studio 5000 Logix Designer",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-10",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.966985+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow for a local attacker to execute arbitrary files, alter configurations, or execute arbitrary code.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-9108",
+        "CVE-2026-9127",
+        "CVE-2026-9128"
+      ],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "627ff05e8211ca32",
+      "title": "Siemens CADRA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-06",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.967290+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary CADRA is affected by multiple zlib and Foxit vulnerabilities.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2005-2096",
+        "CVE-2016-9840"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "e5afb7712e191609",
+      "title": "Rockwell Automation FactoryTalk Services Platform",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-07",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.967447+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to impersonate an authorized user on the FTSP server, resulting in unauthorized access to system configurations.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-10714"
+      ],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "0522744bbf4af4c8",
+      "title": "Siemens Opcenter X",
+      "source": "CISA Cybersecurity Advisories",
+      "source_url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-03",
+      "published_at": "2026-07-21T12:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.967596+00:00",
+      "category": "Government Advisories",
+      "severity": "Medium",
+      "summary": "View CSAF Summary Opcenter X before V2604 contain an authentication bypass vulnerability that could allow an attacker to gain full unauthorized access to the application.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-56451"
+      ],
+      "cvss_score": 3.1,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 24,
+      "score_breakdown": [
+        {
+          "signal": "Critical infrastructure",
+          "points": 12
+        },
+        {
+          "signal": "Government advisory",
+          "points": 8
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "83c96b979abbb111",
+      "title": "Ubuntu snap-confine Flaw Could Give Local Users Root on Default Desktop Installs",
+      "source": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+      "published_at": "2026-07-22T18:07:16+00:00",
+      "collected_at": "2026-07-23T13:49:29.982516+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a target environment.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-8933"
+      ],
+      "cvss_score": 7.8,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 14,
+      "score_breakdown": [
+        {
+          "signal": "High CVSS",
+          "points": 10
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "2145338ac03acef8",
+      "title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
+      "source": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
+      "published_at": "2026-07-22T15:01:21+00:00",
+      "collected_at": "2026-07-23T13:49:29.982580+00:00",
+      "category": "Critical Vulnerabilities",
+      "severity": "Medium",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a user's WhatsApp data.",
+      "why_it_matters": "Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [
+        "CVE-2026-48294"
+      ],
+      "cvss_score": 7.4,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "CVE"
+      ],
+      "importance_score": 14,
+      "score_breakdown": [
+        {
+          "signal": "High CVSS",
+          "points": 10
+        },
+        {
+          "signal": "CVE cited",
+          "points": 4
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "64a0279d0351d769",
+      "title": "New msaRAT malware uses Chrome, Edge browsers to route C2 traffic",
+      "source": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+      "published_at": "2026-07-23T10:00:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.107690+00:00",
+      "category": "Ransomware",
+      "severity": "Low",
+      "summary": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers.",
+      "why_it_matters": "Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "Malware",
+        "Ransomware"
+      ],
+      "importance_score": 12,
+      "score_breakdown": [
+        {
+          "signal": "Ransomware",
+          "points": 12
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "8b2bec85deeb80d7",
+      "title": "Swiss rail giant Stadler rejects $12.3M ransom demand after cyberattack",
+      "source": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
+      "published_at": "2026-07-22T16:59:17+00:00",
+      "collected_at": "2026-07-23T13:49:30.108001+00:00",
+      "category": "Ransomware",
+      "severity": "Low",
+      "summary": "Swiss rail vehicle manufacturer Stadler Rail says the Everest ransomware gang demanded about $12.3 million after breaching a data exchange platform shared with one of its suppliers.",
+      "why_it_matters": "Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "Ransomware"
+      ],
+      "importance_score": 12,
+      "score_breakdown": [
+        {
+          "signal": "Ransomware",
+          "points": 12
+        }
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "6f74290201d6dbea",
+      "title": "How enterprise GenAI can amplify ransomware risk — and how to contain it",
+      "source": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/",
+      "published_at": "2026-07-22T15:30:00+00:00",
+      "collected_at": "2026-07-23T13:49:30.108061+00:00",
+      "category": "Ransomware",
+      "severity": "Low",
+      "summary": "Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities.",
+      "why_it_matters": "Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.",
+      "affected_products": [],
+      "affected_vendors": [],
+      "cves": [],
+      "cvss_score": null,
+      "known_exploited": false,
+      "active_exploitation": false,
+      "patch_available": false,
+      "vendor_advisory_url": null,
+      "mitre_techniques": [],
+      "tags": [
+        "Ransomware"
+      ],
+      "importance_score": 12,
+      "score_breakdown": [
+        {
+          "signal": "Ransomware",
+          "points": 12
+        }
+      ],
+      "related_sources": []
     }
   ]
 }

@@ -1,375 +1,98 @@
-from pathlib import Path
+"""Entry point for the standalone AI & Cyber Daily Digest."""
+
+from __future__ import annotations
+
+import argparse
 import json
-import os
-import requests
+import logging
+from pathlib import Path
 
-
-from config import (
-    RSS_FEEDS,
-    MAX_ARTICLES,
-    DIGEST_FILE,
-    MARKDOWN_OUTPUT
-)
-
-
+from config import DIGEST_FILE, MARKDOWN_OUTPUT, MAX_ARTICLES, RSS_FEEDS
 from feeds import collect_articles
-
-
-from ranker import (
-    rank_articles,
-    diversify_articles
-)
-
-
+from ranker import deduplicate, rank_articles
+from state import load_state, save_state
 from summarizer import build_digest
-
-
-from state import (
-    load_state,
-    save_state,
-    already_seen,
-    add_seen
-)
-
-
-
-def send_discord(message):
-
-    webhook = os.getenv(
-        "DISCORD_WEBHOOK_URL"
-    )
-
-
-    if not webhook:
-
-        print(
-            "Discord webhook not configured"
-        )
-
-        return
-
-
-    response = requests.post(
-
-        webhook,
-
-        json={
-            "content": message[:1900]
-        },
-
-        timeout=10
-
-    )
-
-
-    print(
-        f"Discord status: {response.status_code}"
-    )
-
-
-
-def save_json_digest(digest):
-
-    path = Path(
-        DIGEST_FILE
-    )
-
-
-    path.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-
-    with open(
-
-        path,
-
-        "w",
-
-        encoding="utf-8"
-
-    ) as file:
-
-
-        json.dump(
-
-            digest,
-
-            file,
-
-            indent=2,
-
-            ensure_ascii=False
-
-        )
-
-
-
-def save_markdown(digest):
-
-
-    path = Path(
-        MARKDOWN_OUTPUT
-    )
-
-
-    path.parent.mkdir(
-
-        parents=True,
-
-        exist_ok=True
-
-    )
-
-
-    output = "# AI Cyber Daily Digest\n\n"
-
-
-    output += (
-        "Top cybersecurity and AI intelligence reports\n\n"
-    )
-
-
-    for index, story in enumerate(
-
-        digest["stories"],
-
-        start=1
-
-    ):
-
-
-        output += f"""
-
-## {index}. {story['title']}
-
-
-**Source:** {story['source']}
-
-
-**Category:** {story['category']}
-
-
-{story['summary']}
-
-
-Read More:
-
-{story['link']}
-
-
----
-
-"""
-
-
-    with open(
-
-        path,
-
-        "w",
-
-        encoding="utf-8"
-
-    ) as file:
-
-
-        file.write(
-            output
-        )
-
-
-
-def main():
-
-
-    print(
-        "Loading state..."
-    )
-
-
-    state = load_state()
-
-
-
-    print(
-        "Collecting articles..."
-    )
-
-
-    articles = collect_articles(
-
-        RSS_FEEDS,
-
-        state["seen_links"]
-
-    )
-
-
-    print(
-
-        f"Collected {len(articles)} articles"
-
-    )
-
-
-
-    new_articles = []
-
-
-    for article in articles:
-
-
-        if not already_seen(
-
-            article["link"],
-
-            state
-
-        ):
-
-
-            new_articles.append(
-                article
+from validator import validate_digest
+
+LOG = logging.getLogger("digest")
+
+
+def markdown_for(digest: dict) -> str:
+    lines = [
+        "# AI & Cyber Intelligence Digest", "",
+        f"Generated: {digest['generated_at']}", "",
+        "A prioritized briefing of recent cybersecurity and artificial intelligence developments.", "",
+    ]
+    sections = [
+        ("Critical stories", {"Critical"}),
+        ("High-priority stories", {"High"}),
+        ("Other notable developments", {"Medium", "Low"}),
+    ]
+    for heading, severities in sections:
+        matching = [story for story in digest["stories"] if story["severity"] in severities]
+        if not matching:
+            continue
+        lines.extend([f"## {heading}", ""])
+        for story in matching:
+            lines.extend(
+                [
+                    f"### [{story['title']}]({story['source_url']})", "",
+                    f"**{story['severity']} · {story['category']} · Score {story['importance_score']} · {story['source']}**", "",
+                    story["summary"], "", f"**Why it matters:** {story['why_it_matters']}", "",
+                ]
             )
+            if story["cves"]:
+                lines.extend([f"**CVEs:** {', '.join(story['cves'])}", ""])
+    lines.extend(["## Sources", ""])
+    for status in digest["source_status"]:
+        lines.append(f"- {status['source']}: {status['status']} ({status['articles']} new)")
+    lines.append("")
+    return "\n".join(lines)
 
 
-
-    if not new_articles:
-
-
-        print(
-            "No new articles found"
-        )
+def atomic_write(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(content, encoding="utf-8")
+    temporary.replace(path)
 
 
-        save_state(
-            state
-        )
+def run(allow_empty: bool = False) -> dict | None:
+    state = load_state()
+    articles, statuses = collect_articles(RSS_FEEDS, set(state.get("seen_links", [])))
+    LOG.info("Collected %d new candidate articles", len(articles))
+    if not articles and not allow_empty:
+        LOG.info("No new articles; preserving the last known good digest")
+        return None
+
+    ranked = rank_articles(articles)
+    unique = deduplicate(ranked)
+    digest = build_digest(unique[:MAX_ARTICLES], statuses, len(articles), len(unique))
+    validate_digest(digest, allow_empty=allow_empty)
+
+    # Validation happens before either public artifact is replaced.
+    atomic_write(DIGEST_FILE, json.dumps(digest, indent=2, ensure_ascii=False) + "\n")
+    atomic_write(MARKDOWN_OUTPUT, markdown_for(digest))
+    # Mark every successfully processed candidate, not only the final top stories,
+    # so lower-ranked items do not reappear as "new" on every subsequent run.
+    state["seen_links"] = state.get("seen_links", []) + [article["source_url"] for article in articles]
+    save_state(state)
+    LOG.info("Published %d validated stories", len(digest["stories"]))
+    return digest
 
 
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--validate-only", action="store_true", help="validate the current JSON output")
+    parser.add_argument("--allow-empty", action="store_true", help="permit empty output (intended for tests only)")
+    args = parser.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    if args.validate_only:
+        validate_digest(json.loads(DIGEST_FILE.read_text(encoding="utf-8")), allow_empty=args.allow_empty)
+        LOG.info("Digest validation passed")
         return
-
-
-
-    print(
-        "Ranking articles..."
-    )
-
-
-    ranked_articles = rank_articles(
-
-        new_articles
-
-    )
-
-
-
-    top_articles = diversify_articles(
-
-    ranked_articles,
-
-    MAX_ARTICLES
-
-    )
-
-
-
-    print(
-        "Building digest..."
-    )
-
-
-    digest = build_digest(
-
-        top_articles
-
-    )
-
-
-
-    print(
-        "Saving JSON digest..."
-    )
-
-
-    save_json_digest(
-
-        digest
-
-    )
-
-
-
-    print(
-        "Saving markdown digest..."
-    )
-
-
-    save_markdown(
-
-        digest
-
-    )
-
-
-
-    discord_message = (
-
-        "🛡 AI Cyber Daily Digest\n\n"
-
-    )
-
-
-    for story in digest["stories"]:
-
-
-        discord_message += (
-
-            f"🔥 {story['title']}\n"
-
-            f"{story['link']}\n\n"
-
-        )
-
-
-
-    send_discord(
-
-        discord_message
-
-    )
-
-
-
-    for article in top_articles:
-
-
-        add_seen(
-
-            article["link"],
-
-            state
-
-        )
-
-
-
-    save_state(
-
-        state
-
-    )
-
-
-
-    print(
-        "Digest complete"
-    )
-
+    run(allow_empty=args.allow_empty)
 
 
 if __name__ == "__main__":
-
     main()

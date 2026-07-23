@@ -1,150 +1,70 @@
-name: AI Cyber Daily Digest
-
+name: AI & Cyber Daily Digest
 
 on:
-
+  # GitHub cron uses UTC. Two guarded runs keep this near 09:00 America/New_York
+  # across daylight-saving changes; only the matching local hour proceeds.
   schedule:
-
-    - cron: "0 9 * * *"
-
-
+    - cron: "0 13,14 * * *"
   workflow_dispatch:
 
-
-
 permissions:
-
   contents: write
 
-
+concurrency:
+  group: ai-cyber-daily-digest
+  cancel-in-progress: false
 
 jobs:
-
-
   digest:
-
-
     runs-on: ubuntu-latest
-
-
-
     steps:
-
-
-      - name: Checkout repository
-
-        uses: actions/checkout@v4
-
-        with:
-          fetch-depth: 0
-
-
-
-      - name: Setup Python
-
-        uses: actions/setup-python@v5
-
-        with:
-
-          python-version: "3.12"
-
-
-
-      - name: Install dependencies
-
+      - name: Check Eastern run hour
+        id: schedule
+        shell: bash
         run: |
-
-          python -m pip install --upgrade pip
-
-          pip install -r requirements.txt
-
-
-
-      - name: Run AI Cyber Digest
-
-        env:
-
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-
-        run: |
-
-          python -u src/main.py
-
-
-
-      - name: Verify files
-
-        run: |
-
-          test -f data/ai_cyber_digest.json
-
-          test -f data/ai_cyber_digest_state.json
-
-
-          echo "Files verified"
-
-
-
-      - name: Validate JSON
-
-        run: |
-
-          python - <<'PY'
-
-          import json
-
-
-          files = [
-
-          "data/ai_cyber_digest.json",
-
-          "data/ai_cyber_digest_state.json"
-
-          ]
-
-
-          for file in files:
-
-              with open(file) as f:
-
-                  json.load(f)
-
-
-              print(file,"valid")
-
-          PY
-
-
-
-      - name: Commit updates
-
-        run: |
-
-
-          git config user.name "ai-cyber-digest"
-
-          git config user.email "ai-cyber-digest@users.noreply.github.com"
-
-
-
-          git add data/
-
-          git add output/
-
-
-
-          if git diff --cached --quiet; then
-
-              echo "No changes"
-
-              exit 0
-
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || [[ "$(TZ=America/New_York date +%H)" == "09" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Checkout repository
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/checkout@v4
 
+      - name: Set up Python
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
 
+      - name: Install dependencies
+        if: steps.schedule.outputs.run == 'true'
+        run: python -m pip install -r requirements.txt
+
+      - name: Run unit tests
+        if: steps.schedule.outputs.run == 'true'
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate digest
+        if: steps.schedule.outputs.run == 'true'
+        run: python -u src/main.py
+
+      - name: Validate published output
+        if: steps.schedule.outputs.run == 'true'
+        run: python src/main.py --validate-only
+
+      - name: Commit meaningful output changes
+        if: steps.schedule.outputs.run == 'true'
+        shell: bash
+        run: |
+          git config user.name "ai-cyber-digest"
+          git config user.email "ai-cyber-digest@users.noreply.github.com"
+          git add data/ai_cyber_digest.json data/ai_cyber_digest_state.json output/latest_digest.md
+          if git diff --cached --quiet; then
+            echo "No meaningful digest changes"
+            exit 0
+          fi
           git commit -m "Update AI cyber digest"
-
-
-
           git push

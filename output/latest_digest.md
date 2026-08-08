@@ -1,184 +1,194 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-07-27T17:06:30.734925+00:00
+Generated: 2026-08-08T13:36:27.272578+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
+## Critical stories
+
+### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/08/05/cisa-adds-one-known-exploited-vulnerability-catalog)
+
+**Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
+
+CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
+
+**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+
+**CVEs:** CVE-2026-63077
+
+### [Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication](https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html)
+
+**Critical · Active Exploitation · Score 61 · The Hacker News**
+
+Metabase has warned that a maximum-severity security flaw impacting its business intelligence and data visualization software package has been exploited in the wild as a zero-day.
+
+**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+
 ## Other notable developments
 
-### [Kimi K3 Agents Found Redis Zero-Days and Built RCE Exploit, Researchers Say](https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html)
+### [CPDLC over ATN-B1 Vulnerabilities](https://www.cisa.gov/news-events/ics-advisories/icsa-26-219-01)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary ATN-B1 CPDLC relies on legacy clear text unauthenticated radio frequency links.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2025-71409, CVE-2025-71410, CVE-2025-71411, CVE-2025-71412, CVE-2025-71413
+
+### [ABB Ability Zenon](https://www.cisa.gov/news-events/ics-advisories/icsa-26-218-01)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to bypass security, crash systems, execute unauthorized actions, or compromise data.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2025-14847
+
+### [Medixant RadiAnt DICOM](https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-218-01)
+
+**Medium · Privacy · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to cause the application to crash if a maliciously crafted DICOM file is opened.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-17264
+
+### [Johnson Controls Inc. TL280](https://www.cisa.gov/news-events/ics-advisories/icsa-26-218-02)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to access sensitive information on the device.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-27871
+
+### [Metabase SQLi zero-day exploited in customer data-theft attacks](https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/)
+
+**Medium · Active Exploitation · Score 18 · BleepingComputer**
+
+A critical Metabase SQL injection vulnerability was exploited in zero-day attacks to breach customer instances in data theft attacks, known to impact Framework and Tally.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [AI-Assisted HTTP Terminator Finds Novel HTTP Desync Techniques and Apache Zero-Day](https://thehackernews.com/2026/08/ai-assisted-http-terminator-finds-novel.html)
 
 **Medium · Active Exploitation · Score 18 · The Hacker News**
 
-Redis shipped seven security releases on July 23 after researchers published authenticated RCE PoCs for stock Redis 6.2.22, 7.4.9, 8.6.4, and 8.8.0.
+PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate desync vectors.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Russian Espionage Group Exploited Zimbra Zero-Day to Steal Mail and 2FA Codes](https://thehackernews.com/2026/07/russian-espionage-group-exploited.html)
+### [AI Recommendation Poisoning: How "Ask AI" Buttons Silently Alter LLM Memory](https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html)
 
 **Medium · Active Exploitation · Score 18 · The Hacker News**
 
-A Russian state-supported espionage group spent months reading Western mailboxes through a then-unknown flaw in Zimbra's webmail client.
+A new class of prompt injection is spreading across commercial websites.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Coca-Cola Confirms Data Breach After Fairlife Ransomware Attack](https://www.securityweek.com/coca-cola-confirms-data-breach-after-fairlife-ransomware-attack/)
+### [New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP](https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html)
 
-**Low · Ransomware · Score 12 · SecurityWeek**
+**Medium · Critical Vulnerabilities · Score 14 · The Hacker News**
 
-The Anubis cybercrime group has taken credit for the attack and is threatening to leak data.
+WordPress has fixed a pre-authentication reflected cross-site scripting (XSS) flaw in its login screen that affects every version of the content management system.
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-### [Ernst & Young data breach claimed by ShinyHunters extortion gang](https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/)
+**CVEs:** CVE-2026-64638
 
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [PTC Windchill Vulnerability Exploited in Ransomware Campaign](https://www.securityweek.com/ptc-windchill-vulnerability-exploited-in-ransomware-campaign/)
-
-**Low · Ransomware · Score 12 · SecurityWeek**
-
-The critical unsafe deserialization flaw allows attackers to execute arbitrary code remotely, without authentication.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Cruciferra Crypter Uses BYOVD and Process Ghosting to Hide Windows Malware](https://thehackernews.com/2026/07/cruciferra-crypter-uses-byovd-and.html)
-
-**Low · Nation-State Activity · Score 12 · The Hacker News**
-
-The China-linked cybercrime group behind the use of income tax-related phishing lures targeting Indian taxpayers, tax professionals, and corporate finance teams has been observed using a sophisticated crypter service called Cruciferra.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [ShinyHunters data leaks fuel $2,000 sextortion email scam](https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/)
-
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Cl0p Affiliates Target Internet-Exposed PTC Windchill and FlexPLM with Unauthenticated RCE](https://thehackernews.com/2026/07/cl0p-affiliates-target-internet-exposed.html)
+### [UNC6671 Vishing Attacks Target Personal Phones to Steal SaaS Data](https://thehackernews.com/2026/08/unc6671-vishing-attacks-target-personal.html)
 
 **Low · Ransomware · Score 12 · The Hacker News**
 
-Threat actors linked to the Cl0p (aka Chubby Scorpius, FIN11, Graceful Spider, and Lace Tempest) ransomware campaign are exploiting flaws in internet-exposed PTC Windmill and FlexPLM deployments as part of a new data extortion campaign.
+A recent wave of cyber attacks targeting financial services, private equity, and professional services has been attributed to a data extortion group known as UNC6671.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [DevMan RaaS Portal Centralizes Payload Builds, Victim Management, and Affiliate Payouts](https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html)
+### [Vishing Extortion Group UNC6671 Rebrands After Making Millions](https://www.securityweek.com/vishing-extortion-group-unc6671-rebrands-after-making-millions/)
 
-**Low · Ransomware · Score 12 · The Hacker News**
+**Low · Ransomware · Score 12 · SecurityWeek**
 
-The operators of the DevMan ransomware-as-a-service (RaaS) scheme are maintaining a dedicated web platform that offers affiliates the ability to build payloads, oversee earnings, and manage various aspects related to victims.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [BlueNoroff Zoom Phishing Kit Profiles Crypto Wallets Before Malware Delivery](https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html)
-
-**Low · Nation-State Activity · Score 12 · The Hacker News**
-
-The North Korean threat actors behind the ClickFix-style campaigns that employ typosquatted Zoom and Microsoft Teams domains have been found to operate an active phishing kit to impersonate the videoconferencing platforms in social engineering campaigns designed to deliver malware.
+Initially calling itself BlackFile, the group has expanded operations to the Redact, Pink, Helix, and Falcon brands.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [DentaQuest Data Breach Potentially Impacts Over 23 Million People](https://www.securityweek.com/dentaquest-data-breach-potentially-impacts-over-23-million-people/)
+### [Hedge fund cyberattacks tied to BlackFile-linked UNC6671 extortion group](https://www.bleepingcomputer.com/news/security/hedge-fund-cyberattacks-tied-to-blackfile-linked-unc6671-extortion-group/)
+
+**Low · Ransomware · Score 12 · BleepingComputer**
+
+A recent wave of cyberattacks targeting hedge funds, private-equity firms, and other financial organizations has been linked to UNC6671, an extortion group reportedly associated with the BlackFile threat actors.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Canadian Man Pleads Guilty in Snowflake Extortions](https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/)
+
+**Low · Ransomware · Score 12 · Krebs on Security**
+
+A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud data storage provider Snowflake.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Ransom Cartel ransomware creator sentenced to 16 years in prison](https://www.bleepingcomputer.com/news/security/ransom-cartel-ransomware-creator-sentenced-to-16-years-in-prison/)
+
+**Low · Ransomware · Score 12 · BleepingComputer**
+
+Maksim Silnikau, the creator and administrator of the Ransom Cartel ransomware operation, was sentenced to 16 years in prison for his role in ransomware attacks against at least 18 companies worldwide.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [3.8 Million Impacted by Unlimited Technology Systems Data Breach](https://www.securityweek.com/3-8-million-impacted-by-unlimited-technology-systems-data-breach/)
 
 **Low · Data Breaches · Score 10 · SecurityWeek**
 
-In May 2026, hackers stole personal and dental health information from DentaQuest’s computer network.
+Hackers stole personal, medical, and health insurance information from a company’s data center.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [OnTrac notifies customers of data breach after network hack](https://www.bleepingcomputer.com/news/security/ontrac-notifies-customers-of-data-breach-after-network-hack/)
+### [Atlassian Rovo Can Be Tricked Into Sending Jira and Confluence Data to Attackers](https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html)
 
-**Low · Data Breaches · Score 10 · BleepingComputer**
+**Low · AI Security · Score 8 · The Hacker News**
 
-OnTrac parcel delivery company is informing that hackers breached its corporate network and may have accessed personal details belonging to its customers.
-
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
-
-### [Chick-fil-A data breach affects more than 13,000 customers](https://www.bleepingcomputer.com/news/security/chick-fil-a-data-breach-affects-more-than-13-000-customers/)
-
-**Low · Data Breaches · Score 10 · BleepingComputer**
-
-Chick-fil-A has confirmed that over 13,000 customers had their accounts breached in a wave of credential stuffing attacks targeting its website and mobile app between June 17 and June 19.
-
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
-
-### [Nvidia and Tech Giants Launch AI Security Alliance](https://www.securityweek.com/nvidia-and-tech-giants-launch-ai-security-alliance/)
-
-**Low · AI Security · Score 8 · SecurityWeek**
-
-The Nvidia-led coalition aims to give defenders more open tools for testing, auditing and protecting AI models and agents.
+Attacker-controlled instructions can make Atlassian's Rovo assistant collect Jira or Confluence data that a signed-in user can access, then send it to an outside server.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
-### [n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process](https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html)
+### [Microsoft, Apple Release Fresh Security Updates](https://www.securityweek.com/microsoft-apple-release-fresh-security-updates/)
 
-**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
+**Low · General Cybersecurity · Score 4 · SecurityWeek**
 
-n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-27577
-
-### [Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available](https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html)
-
-**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
-
-Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-16723
-
-### [Bing Images Flaws Let Crafted SVGs Run Commands as SYSTEM on Microsoft's Servers](https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html)
-
-**Low · Cloud Security · Score 4 · The Hacker News**
-
-A crafted SVG submitted to Bing's image search ran commands as NT AUTHORITY\SYSTEM on Microsoft's production image-processing workers, and as root on the Linux machines in the same fleet.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-32194
-
-### [Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw](https://thehackernews.com/2026/07/public-exploit-released-for-patched.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-Public exploit details released on July 27 show how an unauthenticated request can reach PHP's eval() function inside vBulletin and execute code on an unpatched forum server.
+Microsoft fixed critical vulnerabilities across Azure, Entra, and SharePoint, while Apple patched a high-severity authentication bypass.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [New GitHub, PyPI Policies Boost Supply Chain Security](https://www.securityweek.com/new-github-pypi-policies-boost-supply-chain-security/)
+### [New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape to Linux Hosts](https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html)
 
-**Low · Supply Chain · Score 0 · SecurityWeek**
+**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-Dependabot gets a three-day cooldown window before opening pull requests, and PyPI rejects file uploads to releases older than 14 days.
+Zapscape, a new Linux kernel vulnerability, could allow an attacker with kernel privileges inside an L1 guest virtual machine (VM) to escape KVM isolation and execute code on the host.
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-### [⚡ Weekly Recap: Rogue AI Agents, Check Point Exploit, Slopsquatting, ClickFix Lures and More](https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html)
+**CVEs:** CVE-2026-64561
 
-**Low · Cloud Security · Score 0 · The Hacker News**
+### [Critical One-Click Vulnerability in Atlassian’s Rovo AI Exposed Enterprise Data](https://www.securityweek.com/critical-one-click-vulnerability-in-atlassians-rovo-ai-exposed-enterprise-data/)
 
-Monday starts with the usual promise that everything is under control.
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+The RovoBlast attack method identified by Varonis researchers could have been exploited to steal Confluence, Jira and SharePoint data.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
 ## Sources
 
-- The Hacker News: success (24 new)
+- The Hacker News: success (25 new)
 - BleepingComputer: success (15 new)
-- Krebs on Security: no_new_articles (0 new)
+- Krebs on Security: success (1 new)
 - SecurityWeek: success (10 new)
-- CISA Cybersecurity Advisories: no_new_articles (0 new)
+- CISA Cybersecurity Advisories: success (6 new)
 - MIT News AI: success (1 new)
 - Google AI: no_new_articles (0 new)
-- OpenAI News: success (1 new)
+- OpenAI News: success (6 new)

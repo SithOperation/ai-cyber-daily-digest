@@ -1,188 +1,190 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-08-17T13:30:11.425411+00:00
+Generated: 2026-08-18T13:33:21.868947+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
+## Critical stories
+
+### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/08/17/cisa-adds-one-known-exploited-vulnerability-catalog)
+
+**Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
+
+CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
+
+**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+
+**CVEs:** CVE-2025-62593
+
 ## High-priority stories
 
-### [Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner](https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html)
+### [CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE](https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html)
 
-**High · Active Exploitation · Score 47 · The Hacker News**
+**High · Active Exploitation · Score 45 · The Hacker News**
 
-A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC) has warned.
-
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
-
-**CVEs:** CVE-2026-65400
-
-### [GeoServer Zero-Day Targeted in Active Exploitation Attempts, Can Lead to RCE](https://thehackernews.com/2026/08/unpatched-geoserver-zero-day-targeted.html)
-
-**High · Active Exploitation · Score 43 · The Hacker News**
-
-A newly disclosed zero-day flaw in GeoServer is seeing active exploitation efforts, per watchTowr.
+The U.S.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
-
-### [Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware](https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html)
-
-**High · Ransomware · Score 34 · The Hacker News**
-
-Cybersecurity researchers have attributed the exploitation of a newly patched security flaw in Broadcom VMware vCenter to a suspected China-nexus advanced persistent threat (APT).
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-59310
 
 ## Other notable developments
 
-### [SAP Commerce Cloud CVE-2026-58231 Targeted in Exploitation Attempts Days After Patch](https://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html)
+### [CISA: Windows Task Host flaw now exploited by ransomware gangs](https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/)
 
-**Medium · Active Exploitation · Score 29 · The Hacker News**
+**Medium · Active Exploitation · Score 25 · BleepingComputer**
 
-A maximum-severity security vulnerability impacting SAP Commerce Cloud is witnessing active exploitation efforts.
+The U.S.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
-**CVEs:** CVE-2026-58231
+### [⚡ Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More](https://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html)
 
-### [Microsoft working on Defender patch for ShieldBreak zero-day](https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/)
+**Medium · Active Exploitation · Score 18 · The Hacker News**
 
-**Medium · Active Exploitation · Score 22 · BleepingComputer**
-
-Microsoft is working on a security patch for the "ShieldBreak" zero-day vulnerability disclosed last week by security researcher "Nightmare Eclipse" and now tracked as CVE-2026-69414.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-69414
-
-### [Philips and GE investigating Clop ransomware data theft claims](https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/)
-
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-Tech giants General Electric (GE) and Philips have also confirmed they're investigating claims that the Clop ransomware gang breached their systems and stole data.
+The expensive attacks are not always the clever ones.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [China-Linked Jewelbug Uses XG-Web for Government Espionage and Crypto Fraud](https://thehackernews.com/2026/08/china-linked-jewelbug-uses-xg-web-for.html)
+### [Cavern C2 Uses DNS and Google Apps Script to Blend Into Legitimate Traffic](https://thehackernews.com/2026/08/cavern-c2-uses-dns-and-google-apps.html)
 
 **Low · Nation-State Activity · Score 12 · The Hacker News**
 
-The China-linked threat actor known as Jewelbug has been observed carrying out cyber espionage operations targeting governments and militaries, while simultaneously engaging in cryptocurrency fraud.
+Cybersecurity researchers have traced the continued evolution of the Cavern (aka Cav3rn) command-and-control (C2) framework used by Iranian nation-state hackers in attacks targeting entities in Israel.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure](https://thehackernews.com/2026/08/new-patchcord-backdoor-targets-afghan.html)
-
-**Low · Malware · Score 12 · The Hacker News**
-
-Afghan telecom providers and South Asian critical infrastructure organizations have emerged as the target of a new ongoing campaign that delivers a previously undocumented backdoor called PATCHCORD.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [French tax authority data breach affects 678,000 individuals](https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/)
-
-**Low · Data Breaches · Score 10 · BleepingComputer**
-
-The French Ministry of the Economy and Finance has disclosed a data breach after an attacker accessed the General Directorate of Public Finances (DGFiP) systems and stole data belonging to 678,000 individuals.
-
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
-
-### [40,000 Impacted by SafePal Data Breach](https://www.securityweek.com/40000-impacted-by-safepal-data-breach/)
+### [Heights Finance Data Breach Impacts at Least 1.2 Million Individuals](https://www.securityweek.com/heights-finance-data-breach-impacts-at-least-1-2-million-individuals/)
 
 **Low · Data Breaches · Score 10 · SecurityWeek**
 
-Hackers exploited a vulnerability in the order-tracking function of a plugin to access SafePal customer information.
+Hackers stole names, addresses, phone numbers, Social Security numbers, and financial information from a third-party platform.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [SafePal data breach impacts 39,798 customers, stolen info for sale](https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/)
+### [Pokémon Center data breach exposes customer info, cancels some orders](https://www.bleepingcomputer.com/news/security/pokemon-center-data-breach-exposes-customer-info-cancels-some-orders/)
 
 **Low · Data Breaches · Score 10 · BleepingComputer**
 
-Cryptocurrency hardware wallet provider SafePal is warning of a data breach affecting about 39,798 customers after a flaw was exploited to steal customer order information, and a threat actor is now claiming to be selling the stolen data.
+Pokémon Center is notifying customers in the United Kingdom and Germany that it suffered a third-party data breach after hackers stole customer personal and order information from third-party logistics provider CEVA Logistics.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [ThreatsDay: GhostJacking AI Attacks, EtherHiding ClickFix, Cursor CLI Flaw + 17 More Stories](https://thehackernews.com/2026/08/threatsday-ghostjacking-ai-attacks.html)
+### [680,000 Impacted by French Tax Authority Data Breach](https://www.securityweek.com/680000-impacted-by-french-tax-authority-data-breach/)
 
-**Low · Data Breaches · Score 10 · The Hacker News**
+**Low · Data Breaches · Score 10 · SecurityWeek**
 
-Some weeks have one big security story.
+Hackers used compromised credentials to access enterprise and personal tax-related data.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [Irregular Details How a Naming Error Let AI Models Attack a Real Company](https://www.securityweek.com/irregular-details-how-a-naming-error-let-ai-models-attack-a-real-company/)
+### [Fortinet Acquires AI Security Company Virtue AI](https://www.securityweek.com/fortinet-acquires-ai-security-company-virtue-ai/)
 
 **Low · AI Security · Score 8 · SecurityWeek**
 
-The AI security testing firm has shared information on a recently disclosed incident involving Anthropic AI models.
+Fortinet will use Virtue AI technology to enhance its AI security portfolio, including for AI models, applications, and agentic systems.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
-### [How MCP Servers Can Expose Enterprise Secrets](https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html)
+### [Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects](https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html)
 
-**Low · AI Security · Score 8 · The Hacker News**
+**Low · Critical Vulnerabilities · Score 8 · The Hacker News**
 
-MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running.
+GitLab has released security updates to address a critical vulnerability impacting its Community Edition (CE) and Enterprise Edition (EE) software that, under certain conditions, could allow an unauthenticated attacker to remotely modify or delete public projects and user data.
 
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
 
-### [Windows Server 2022 reaches end of mainstream support in 60 days](https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/)
+**CVEs:** CVE-2026-19478
 
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
+### [Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads](https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html)
 
-Microsoft has reminded IT administrators that Windows Server 2022 is rapidly approaching its mainstream end date of October 2026, when it will switch to extended support.
+**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+A critical security flaw has been disclosed in Forminator Forms, a WordPress plugin with more than 600,000 active installations, that could be exploited to achieve arbitrary code execution on susceptible sites.
 
-### [Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware](https://www.securityweek.com/conflicting-test-goals-pushed-claude-agents-to-deploy-self-replicating-malware/)
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**Low · Malware · Score 0 · SecurityWeek**
+**CVEs:** CVE-2026-15748
 
-Anthropic has been conducting tests to identify issues in how AI agents interact with each other.
+### [Dozens of WebKit Vulnerabilities Patched With Fresh macOS, iOS Security Updates](https://www.securityweek.com/dozens-of-webkit-vulnerabilities-patched-with-fresh-macos-ios-security-updates/)
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Low · General Cybersecurity · Score 4 · SecurityWeek**
 
-### [Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access](https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html)
-
-**Low · Critical Vulnerabilities · Score 0 · The Hacker News**
-
-Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker.
+The bugs could be exploited to crash Safari, corrupt memory, leak sensitive data, escape the sandbox, and exfiltrate data.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies](https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html)
+### [Certighost and the Privilege Hiding in Your Certificate Authority](https://www.bleepingcomputer.com/news/security/certighost-and-the-privilege-hiding-in-your-certificate-authority/)
 
-**Low · Cloud Security · Score 0 · The Hacker News**
+**Low · Critical Vulnerabilities · Score 4 · BleepingComputer**
 
-Cybersecurity researchers have flagged a previously undocumented Linux botnet family dubbed Evooo1Bot that derives its core functionality from the Mirai botnet source code and is equipped to turn internet-facing devices into SOCKS proxies.
+CVE-2026-54121 lets a standard domain user turn your Enterprise CA into a Domain Controller.
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-### [Recent macOS Screen Sharing Vulnerability Exploited in Attacks](https://www.securityweek.com/recent-macos-screen-sharing-vulnerability-exploited-in-attacks/)
+**CVEs:** CVE-2026-54121
+
+### [AI-Driven Vulnerability Surge Breaks the Traditional Patching Model](https://www.securityweek.com/ai-driven-vulnerability-surge-breaks-the-traditional-patching-model/)
 
 **Low · General Cybersecurity · Score 0 · SecurityWeek**
 
-Threat actors gained root access to the vulnerable systems and deployed a Monero miner.
+Rapid7 warns that traditional patch cycles cannot keep pace with soaring vulnerability disclosures and faster exploitation, forcing defenders to prioritize exposure over severity scores.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Get closer to the game with Gemini and Pixel](https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/)
+### [AI "Mind Viruses" Can Spread Between Agents Through Persistent Prompt Files](https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html)
 
-**Low · Artificial Intelligence · Score 0 · Google AI**
+**Low · Artificial Intelligence · Score 0 · The Hacker News**
 
-Low-angle view of a soccer player kicking a ball mid-air against a bright blue sky, with grass flying from their cleats.
+Security researchers at Anthropic and Switzerland's EPFL have demonstrated that self-propagating payloads can spread from one artificial intelligence (AI) agent to the next through the editable system prompt files that autonomous agent harnesses use to carry state between sessions.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
+### [TWINLOOT Abuses SharePoint and Teams to Steal Credentials and Move Across Networks](https://thehackernews.com/2026/08/twinloot-abuses-sharepoint-and-teams-to.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+Cybersecurity researchers have disclosed details of a previously undocumented Python implant framework dubbed TWINLOOT.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Xpander Raises $7.5 Million for AI Management and Governance](https://www.securityweek.com/xpander-raises-7-5-million-for-ai-management-and-governance/)
+
+**Low · Artificial Intelligence · Score 0 · SecurityWeek**
+
+Xpander’s platform uses a universal agent harness that executes AI agents as portable workloads and securely renders interfaces on demand.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [One Attacker Has Scraped Both Salesforce and ServiceNow Portals Since 2025](https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html)
+
+**Low · Critical Vulnerabilities · Score 0 · The Hacker News**
+
+A single piece of infrastructure has been pulling records out of Salesforce and ServiceNow customer portals across multiple industries for more than a year, according to research published this week by agent security platform Reco.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets](https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html)
+
+**Low · Malware · Score 0 · The Hacker News**
+
+Cybersecurity researchers have flagged a new typosquatting campaign targeting RubyGems users with a Windows-based information stealer.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Microsoft tests faster Windows File Explorer, new context menu](https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-faster-windows-explorer-customizable-context-menu/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+Microsoft has started testing a faster File Explorer and a less cluttered and more customizable context menu in Windows 11 preview builds rolling out to Insiders this week.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
 ## Sources
 
-- The Hacker News: success (18 new)
+- The Hacker News: success (11 new)
 - BleepingComputer: success (8 new)
 - Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (6 new)
-- CISA Cybersecurity Advisories: no_new_articles (0 new)
-- MIT News AI: no_new_articles (0 new)
-- Google AI: success (1 new)
-- OpenAI News: success (3 new)
+- SecurityWeek: success (8 new)
+- CISA Cybersecurity Advisories: success (1 new)
+- MIT News AI: success (1 new)
+- Google AI: no_new_articles (0 new)
+- OpenAI News: success (2 new)

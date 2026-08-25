@@ -1,156 +1,184 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-08-24T13:40:09.395170+00:00
+Generated: 2026-08-25T13:38:42.299468+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
-## Other notable developments
+## Critical stories
 
-### [CISA orders urgent patching of actively exploited Zimbra flaw](https://www.bleepingcomputer.com/news/security/cisa-orders-urgent-patching-of-actively-exploited-zimbra-flaw/)
+### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/08/24/cisa-adds-one-known-exploited-vulnerability-catalog)
 
-**Medium · Active Exploitation · Score 25 · BleepingComputer**
+**Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
 
-The Cybersecurity and Infrastructure Security Agency (CISA) has ordered U.S.
+CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
-### [Iran-Linked Hackers Shut Down UK Power Plant for Four Days](https://www.securityweek.com/iran-linked-hackers-shut-down-uk-power-plant-for-four-days/)
+**CVEs:** CVE-2026-21962
 
-**Low · Nation-State Activity · Score 12 · SecurityWeek**
+## Other notable developments
 
-The attack caused real-world operational disruption and raised concerns about the resilience of Britain’s distributed energy infrastructure and the potential for repeatable attacks.
+### [Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access](https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html)
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Medium · Cloud Security · Score 14 · The Hacker News**
 
-### [Personal Information Exposed in Apollo Global Data Breach](https://www.securityweek.com/personal-information-exposed-in-apollo-global-data-breach/)
+Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.
 
-**Low · Data Breaches · Score 10 · SecurityWeek**
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-The private equity firm appears to have been targeted as part of a campaign focusing on major financial companies.
+**CVEs:** CVE-2026-61979
 
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+### [Generating scenarios for extreme events, without extreme data](https://news.mit.edu/2026/generating-scenarios-extreme-events-without-extreme-data-0824)
 
-### [Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account](https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html)
+**Low · Supply Chain · Score 12 · MIT News AI**
 
-**Low · Critical Vulnerabilities · Score 8 · The Hacker News**
-
-Red Hat and the Keycloak project have released patches to address a critical security flaw in the open-source identity and access management server that could allow an unauthenticated remote attacker to take over any user account by forcing a password reset.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-18963
-
-### [Uber Fined Nearly $1 Billion by Dutch Regulators Over Automated Suspensions of Driver Accounts](https://www.securityweek.com/uber-fined-nearly-1-billion-by-dutch-regulators-over-automated-suspensions-of-driver-accounts/)
-
-**Low · Privacy · Score 0 · SecurityWeek**
-
-Dutch Data Protection Authority said it is imposing a fine of 825 million euros because Uber violated the EU’s General Data Protection Regulation.
+A new algorithm learns to anticipate the unprecedented scenarios that critical infrastructure and global supply chains are least prepared for.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Microsoft: August updates break printing, PDF export in WPF apps](https://www.bleepingcomputer.com/news/microsoft/microsoft-august-updates-break-printing-pdf-export-in-wpf-apps/)
+### [WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords](https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html)
+
+**Low · Ransomware · Score 12 · The Hacker News**
+
+Cybersecurity researchers have flagged two new malware families called WordlistLoader and SynkLoader that's used to deliver next-stage payloads and likely sell access to ransomware groups.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [WhatsApp Adds Multiple Passkeys and Stronger 2SV in Account Security Update](https://www.securityweek.com/whatsapp-adds-multiple-passkeys-and-stronger-2sv-in-account-security-update/)
+
+**Low · General Cybersecurity · Score 4 · SecurityWeek**
+
+When Android users get a call from a non-contact, they will see more information about the caller, including their country.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [WhatsApp adds stronger two-step verification, multiple passkeys](https://www.bleepingcomputer.com/news/security/whatsapp-adds-stronger-two-step-verification-multiple-passkeys/)
 
 **Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Microsoft has confirmed that .NET Framework updates released as part of the August 2026 Patch Tuesday are breaking printing and PDF export in WPF applications.
+WhatsApp has started rolling out several new account security features, including support for multiple passkeys and stronger two-step verification.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [91 Vulnerabilities Patched in Spring Application Framework](https://www.securityweek.com/91-vulnerabilities-patched-in-spring-application-framework/)
+### [Hands-On Cyber-Physical Systems Training Returns to ICS Cybersecurity Conference](https://www.securityweek.com/hands-on-cyber-physical-systems-training-returns-to-ics-cybersecurity-conference/)
 
 **Low · General Cybersecurity · Score 0 · SecurityWeek**
 
-More than 200 vulnerabilities have been patched to date this year, compared to only 16 in 2025 and 22 in 2024.
+Hands-on Cyber Attack Methods course returns to SecurityWeek’s ICS Cybersecurity Conference, October 6–8 at the W Nashville.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt](https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html)
+### [Hackers breached over 270 Zimbra servers in ongoing attacks](https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/)
 
-**Low · Critical Vulnerabilities · Score 0 · The Hacker News**
+**Low · Critical Vulnerabilities · Score 0 · BleepingComputer**
 
-If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.
+Threat actors have already compromised over 270 Zimbra instances in remote code execution attacks targeting a high-severity Zimbra Collaboration Suite (ZCS) vulnerability.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Operation QUICSILVER Targets Myanmar Government and IT with QUICAgent Backdoor](https://thehackernews.com/2026/08/operation-quicsilver-targets-myanmar.html)
+### [Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows](https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages](https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html)
 
 **Low · Malware · Score 0 · The Hacker News**
 
-Cybersecurity researchers have flagged a cyber espionage campaign targeting Myanmar that uses graduation ceremony invitation lures to deliver a Go backdoor called QUICAgent.
+Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [The Outsized Shadow: Why 5% of AI Users Are Your Biggest Security Risk](https://thehackernews.com/2026/08/the-outsized-shadow-why-5-of-ai-users.html)
+### [E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands](https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html)
+
+**Low · Malware · Score 0 · The Hacker News**
+
+Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [First Malware Built Specifically for Car Head Units Fuels Botnet](https://www.securityweek.com/first-malware-built-specifically-for-car-head-units-fuels-botnet/)
+
+**Low · Malware · Score 0 · SecurityWeek**
+
+Kaspersky researchers have linked the malware to the BadBox botnet, which has ensnared millions of devices.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Frontier AI: Vulnerability Management's Systemic Revolution](https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html)
 
 **Low · General Cybersecurity · Score 0 · The Hacker News**
 
-Big security risks come in small packages.
+Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Venezuelan Gets Record Federal Prison Term for ATM Jackpotting](https://www.securityweek.com/venezuelan-gets-record-federal-prison-term-for-atm-jackpotting/)
+### [Police arrests dozens of suspects in global cybercrime crackdown](https://www.bleepingcomputer.com/news/security/police-arrests-dozens-of-suspects-in-global-cybercrime-crackdown/)
+
+**Low · Critical Vulnerabilities · Score 0 · BleepingComputer**
+
+Law enforcement agencies from 22 countries helped identify 263 suspects and arrested 58 individuals linked to cybercrime networks coordinated by African crime groups.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Silent Patches Don’t Stop Attackers – They Blind Defenders](https://www.securityweek.com/silent-patches-dont-stop-attackers-they-blind-defenders/)
 
 **Low · General Cybersecurity · Score 0 · SecurityWeek**
 
-Juan Manuel Gouveia-Aguilera has been sentenced to 8 years in prison for his role in an ATM jackpotting scheme that caused millions in losses.
+Silent patches can become exploit intelligence for attackers while leaving defenders without the context needed to prioritize risk.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Rethinking Application Security for the AI Era](https://www.securityweek.com/rethinking-application-security-for-the-ai-era/)
+### [Taiwan Charges 9 Over Illegal AI Server Exports to China, Including Nvidia and Super Micro Staff](https://www.securityweek.com/taiwan-charges-9-over-illegal-ai-server-exports-to-china-including-nvidia-and-super-micro-staff/)
 
 **Low · General Cybersecurity · Score 0 · SecurityWeek**
 
-As AI dramatically shortens the time from vulnerability disclosure to exploitation, enterprises must look beyond patching to reduce application risk.
+AI infrastructure, including advanced semiconductors mostly made in Taiwan, has become a key point of competition between the U.S.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Microsoft shares temporary fix for Windows 11 gaming issues](https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-temporary-fix-for-windows-11-gaming-issues/)
+### [Disrupting a new covert influence campaign from Russia](https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia)
+
+**Low · Artificial Intelligence · Score 0 · OpenAI News**
+
+OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [Unpatched Calix flaw lets hackers bypass NAT to expose internal devices](https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/)
 
 **Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Microsoft has shared a temporary fix for ongoing gaming issues caused by Windows 11 updates released during the August 2026 Patch Tuesday.
+An unpatched vulnerability in Calix GS7 XGS (GS5239XG) residential routers used by multiple U.S.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [TikTok Reaches $400 Million Settlement With US Justice Department Over Children’s Privacy](https://www.securityweek.com/tiktok-reaches-400-million-settlement-with-us-justice-department-over-childrens-privacy/)
+### [Hackers target WordPress sites in miniOrange auth bypass attacks](https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-in-miniorange-auth-bypass-attacks/)
 
-**Low · Privacy · Score 0 · SecurityWeek**
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-TikTok will pay $300 million immediately and another $100 million after an order vacates an earlier consent decree against its predecessor company, Musical.ly.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [UAT-10147 Uses AI to Scale Server Attacks, Deploys SPECTRE With EDR Bypass and Linux Rootkit](https://thehackernews.com/2026/08/uat-10147-uses-ai-to-scale-server.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-Cybersecurity researchers have disclosed details of a Chinese-speaking cybercrime group dubbed UAT-10147 that's targeting Windows and Linux web servers globally across the education, media, technology, and gaming sectors.
+Hackers are attempting to exploit two critical authentication bypass vulnerabilities in the miniOrange SAML 2.0 Single Sign On plugin for WordPress that can be used to forge SAML responses and log in as administrators.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Anthropic Expands Mythos 5 Access to More Defenders, Unveils $35M Open Source Fund](https://www.securityweek.com/anthropic-expands-mythos-5-access-to-more-defenders-unveils-35m-open-source-fund/)
+### [TikTok reaches $400M settlement with US over COPPA violations](https://www.bleepingcomputer.com/news/legal/tiktok-reaches-400m-settlement-with-us-over-coppa-violations/)
 
-**Low · Critical Vulnerabilities · Score 0 · SecurityWeek**
+**Low · Privacy · Score 0 · BleepingComputer**
 
-Claude Security, currently in public beta for Claude Enterprise customers, now runs codebase scans on Mythos 5.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [ToxicPanda Android malware uses VPN permissions to block Google Play](https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/)
-
-**Low · Malware · Score 0 · BleepingComputer**
-
-The ToxicPanda Android malware has evolved with new malicious functionality, expanding its targeting to 349 applications and adding support for 167 remote commands.
+The U.S.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
 ## Sources
 
-- The Hacker News: success (5 new)
-- BleepingComputer: success (4 new)
+- The Hacker News: success (9 new)
+- BleepingComputer: success (9 new)
 - Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (8 new)
-- CISA Cybersecurity Advisories: no_new_articles (0 new)
-- MIT News AI: no_new_articles (0 new)
+- SecurityWeek: success (9 new)
+- CISA Cybersecurity Advisories: success (1 new)
+- MIT News AI: success (1 new)
 - Google AI: no_new_articles (0 new)
-- OpenAI News: no_new_articles (0 new)
+- OpenAI News: success (2 new)

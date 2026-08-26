@@ -1,12 +1,12 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-08-25T13:38:42.299468+00:00
+Generated: 2026-08-26T13:43:14.495077+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
 ## Critical stories
 
-### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/08/24/cisa-adds-one-known-exploited-vulnerability-catalog)
+### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/08/25/cisa-adds-one-known-exploited-vulnerability-catalog)
 
 **Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
 
@@ -14,171 +14,185 @@ CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
-**CVEs:** CVE-2026-21962
+**CVEs:** CVE-2026-60004
 
 ## Other notable developments
 
-### [Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access](https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html)
+### [U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches](https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html)
 
-**Medium · Cloud Security · Score 14 · The Hacker News**
-
-Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-61979
-
-### [Generating scenarios for extreme events, without extreme data](https://news.mit.edu/2026/generating-scenarios-extreme-events-without-extreme-data-0824)
-
-**Low · Supply Chain · Score 12 · MIT News AI**
-
-A new algorithm learns to anticipate the unprecedented scenarios that critical infrastructure and global supply chains are least prepared for.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords](https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html)
-
-**Low · Ransomware · Score 12 · The Hacker News**
-
-Cybersecurity researchers have flagged two new malware families called WordlistLoader and SynkLoader that's used to deliver next-stage payloads and likely sell access to ransomware groups.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [WhatsApp Adds Multiple Passkeys and Stronger 2SV in Account Security Update](https://www.securityweek.com/whatsapp-adds-multiple-passkeys-and-stronger-2sv-in-account-security-update/)
-
-**Low · General Cybersecurity · Score 4 · SecurityWeek**
-
-When Android users get a call from a non-contact, they will see more information about the caller, including their country.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [WhatsApp adds stronger two-step verification, multiple passkeys](https://www.bleepingcomputer.com/news/security/whatsapp-adds-stronger-two-step-verification-multiple-passkeys/)
-
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
-
-WhatsApp has started rolling out several new account security features, including support for multiple passkeys and stronger two-step verification.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Hands-On Cyber-Physical Systems Training Returns to ICS Cybersecurity Conference](https://www.securityweek.com/hands-on-cyber-physical-systems-training-returns-to-ics-cybersecurity-conference/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Hands-on Cyber Attack Methods course returns to SecurityWeek’s ICS Cybersecurity Conference, October 6–8 at the W Nashville.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Hackers breached over 270 Zimbra servers in ongoing attacks](https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/)
-
-**Low · Critical Vulnerabilities · Score 0 · BleepingComputer**
-
-Threat actors have already compromised over 270 Zimbra instances in remote code execution attacks targeting a high-severity Zimbra Collaboration Suite (ZCS) vulnerability.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows](https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages](https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html)
-
-**Low · Malware · Score 0 · The Hacker News**
-
-Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands](https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html)
-
-**Low · Malware · Score 0 · The Hacker News**
-
-Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [First Malware Built Specifically for Car Head Units Fuels Botnet](https://www.securityweek.com/first-malware-built-specifically-for-car-head-units-fuels-botnet/)
-
-**Low · Malware · Score 0 · SecurityWeek**
-
-Kaspersky researchers have linked the malware to the BadBox botnet, which has ensnared millions of devices.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Frontier AI: Vulnerability Management's Systemic Revolution](https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Police arrests dozens of suspects in global cybercrime crackdown](https://www.bleepingcomputer.com/news/security/police-arrests-dozens-of-suspects-in-global-cybercrime-crackdown/)
-
-**Low · Critical Vulnerabilities · Score 0 · BleepingComputer**
-
-Law enforcement agencies from 22 countries helped identify 263 suspects and arrested 58 individuals linked to cybercrime networks coordinated by African crime groups.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Silent Patches Don’t Stop Attackers – They Blind Defenders](https://www.securityweek.com/silent-patches-dont-stop-attackers-they-blind-defenders/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Silent patches can become exploit intelligence for attackers while leaving defenders without the context needed to prioritize risk.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Taiwan Charges 9 Over Illegal AI Server Exports to China, Including Nvidia and Super Micro Staff](https://www.securityweek.com/taiwan-charges-9-over-illegal-ai-server-exports-to-china-including-nvidia-and-super-micro-staff/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-AI infrastructure, including advanced semiconductors mostly made in Taiwan, has become a key point of competition between the U.S.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Disrupting a new covert influence campaign from Russia](https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia)
-
-**Low · Artificial Intelligence · Score 0 · OpenAI News**
-
-OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.
-
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
-
-### [Unpatched Calix flaw lets hackers bypass NAT to expose internal devices](https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/)
-
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
-
-An unpatched vulnerability in Calix GS7 XGS (GS5239XG) residential routers used by multiple U.S.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Hackers target WordPress sites in miniOrange auth bypass attacks](https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-in-miniorange-auth-bypass-attacks/)
-
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
-
-Hackers are attempting to exploit two critical authentication bypass vulnerabilities in the miniOrange SAML 2.0 Single Sign On plugin for WordPress that can be used to forge SAML responses and log in as administrators.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [TikTok reaches $400M settlement with US over COPPA violations](https://www.bleepingcomputer.com/news/legal/tiktok-reaches-400m-settlement-with-us-over-coppa-violations/)
-
-**Low · Privacy · Score 0 · BleepingComputer**
+**Medium · Nation-State Activity · Score 24 · The Hacker News**
 
 The U.S.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
+### [Ebyte NE2-D11](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-06)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized administrative access, disclose sensitive information, modify device configuration, hijack authenticated sessions, and disrupt device operation.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-73125
+
+### [Rently Smart Home](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-01)
+
+**Medium · Privacy · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to access sensitive information and override user permissions.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-75960
+
+### [PayRange API](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-04)
+
+**Medium · Privacy · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of this vulnerability could allow a remote, authenticated or unauthenticated attacker to disclose sensitive information, arbitrarily modify the device to cause a denial of service, or alter a devices displayed image.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-18965
+
+### [Zoneminder](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-02)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of this vulnerability could result in full Remote Code Execution (RCE) as the web server user.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-76060
+
+### [Siemens SIMATIC IoT2050 Advanced](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-03)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary SIMATIC IoT2050 Advanced devices running Industrial OS with Node-RED installed contain a missing authentication vulnerability in the Node-RED HTTP interface that could allow an unauthenticated remote attacker to create malicious flows and execute arbitrary code on the underlying server with maximum privileges.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-58115
+
+### [FURUNO FA-50 Class B AIS Transponder](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-07)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to alter device settings.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-59769, CVE-2026-67578
+
+### [Bendix EC80 Brake ECU](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-05)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause the loss of ABS functions, steering assist, speedometer, shifting capabilities, or disable automatic traction control.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-67560
+
+### [Hospital operator Nutex Health says data stolen in cyberattack](https://www.bleepingcomputer.com/news/security/hospital-operator-nutex-health-says-data-stolen-in-cyberattack/)
+
+**Medium · Data Breaches · Score 22 · BleepingComputer**
+
+Healthcare and services provider Nutex is investigating a data breach incident where an unauthorized third party exfiltrated information from company servers.
+
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+
+### [A Tale of Two SOCs: Insights From Two Red Team Assessments](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-237a)
+
+**Medium · Government Advisories · Score 20 · CISA Cybersecurity Advisories**
+
+Advisory at a Glance Title A Tale of Two SOCs: Insights From Two Red Team Assessments Original Publication August 25, 2026 Executive Summary The Cybersecurity and Infrastructure Security Agency (CISA) conducted simultaneous red team assessments at two organizations and observed different defensive outcomes.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [CISA: Over 100 Internet-Exposed Water Systems Targeted in July Cyberattacks](https://www.securityweek.com/cisa-over-100-internet-exposed-water-systems-targeted-in-july-cyberattacks/)
+
+**Low · Nation-State Activity · Score 12 · SecurityWeek**
+
+The agency has released guidance on reducing internet exposure in the wake of the recent Iran-linked hacker attacks.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Sensitive Information Exposed in Nutex Health Data Breach](https://www.securityweek.com/sensitive-information-exposed-in-nutex-health-data-breach/)
+
+**Low · Data Breaches · Score 10 · SecurityWeek**
+
+Nutex Health has informed the SEC that it recently detected unauthorized access and data exfiltration.
+
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+
+### [LACMA data breach last year exposed social security and medical data](https://www.bleepingcomputer.com/news/security/lacma-data-breach-last-year-exposed-social-security-and-medical-data/)
+
+**Low · Data Breaches · Score 10 · BleepingComputer**
+
+The Los Angeles County Museum of Art (LACMA) has announced that a breach last year exposed customer and employee information.
+
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+
+### [Hackers now exploit critical Gitea flaw in code injection attacks](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-gitea-flaw-in-code-injection-attacks/)
+
+**Low · Government Advisories · Score 8 · BleepingComputer**
+
+Attackers are now exploiting a critical-severity vulnerability in the Gitea self-hosted Git service, according to the U.S.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code](https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html)
+
+**Low · Cloud Security · Score 4 · The Hacker News**
+
+The CERT Coordination Center (CERT/CC) has disclosed two unpatched vulnerabilities in Kaltura's HTML5 video player library that allow a remote, unauthenticated attacker to read arbitrary files from a server and execute code on it.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-19912, CVE-2026-19913
+
+### [Ubiquiti patches three max severity security vulnerabilities](https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+Ubiquiti has released security patches for three new maximum-severity vulnerabilities that threat actors can exploit remotely without privileges.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Adobe and Nvidia Patch Dozens of Vulnerabilities](https://www.securityweek.com/adobe-and-nvidia-patch-dozens-of-vulnerabilities/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+Adobe and Nvidia each published several advisories, including ones that address critical vulnerabilities in their products.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Microsoft tests new privacy controls for Windows 11 desktop apps](https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-privacy-controls-for-windows-11-desktop-apps/)
+
+**Low · Privacy · Score 0 · BleepingComputer**
+
+Microsoft has begun testing new privacy controls that will let Windows 11 users choose which desktop applications can access their camera, microphone, and precise location.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Imagine the SOC Without a Queue: From Alert Backlog to AI Hypothesis Engine](https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html)
+
+**Low · General Cybersecurity · Score 0 · The Hacker News**
+
+The SOC we've always known was built around a model that guarantees most of the alert queue will never receive analyst review.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
 ## Sources
 
-- The Hacker News: success (9 new)
-- BleepingComputer: success (9 new)
+- The Hacker News: success (12 new)
+- BleepingComputer: success (10 new)
 - Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (9 new)
-- CISA Cybersecurity Advisories: success (1 new)
+- SecurityWeek: success (8 new)
+- CISA Cybersecurity Advisories: success (9 new)
 - MIT News AI: success (1 new)
-- Google AI: no_new_articles (0 new)
-- OpenAI News: success (2 new)
+- Google AI: success (1 new)
+- OpenAI News: success (4 new)

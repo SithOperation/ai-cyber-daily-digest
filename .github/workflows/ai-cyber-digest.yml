@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: "0 14 * * *"
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/ai-cyber-digest.yml"
+      - "src/**"
+      - "requirements.txt"
 
 permissions:
   contents: write

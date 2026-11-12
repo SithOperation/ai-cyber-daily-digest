@@ -2,6 +2,7 @@
 
 const state = { stories: [] };
 const $ = (selector) => document.querySelector(selector);
+const FRESHNESS_LIMIT_HOURS = 48;
 const dateText = (value, withTime = false) => {
   if (!value) return "Date unavailable";
   const date = new Date(value);
@@ -14,20 +15,27 @@ const dateText = (value, withTime = false) => {
 
 function addEvidence(container, story) {
   const items = [
-    ...story.cves,
+    ...(story.cves || []),
     ...(story.cvss_score ? [`CVSS ${story.cvss_score}`] : []),
     ...(story.active_exploitation ? ["ACTIVE EXPLOITATION"] : []),
     ...(story.known_exploited ? ["CISA KEV"] : []),
     ...(story.patch_available ? ["PATCH AVAILABLE"] : []),
-    ...story.affected_vendors,
-    ...story.affected_products,
-    ...story.mitre_techniques,
+    ...(story.affected_vendors || []),
+    ...(story.affected_products || []),
+    ...(story.mitre_techniques || []),
   ];
   items.forEach((item) => {
     const chip = document.createElement("span");
     chip.textContent = item;
     container.append(chip);
   });
+}
+
+function setSystemState(label, stale = false) {
+  const systemState = $("#system-state");
+  systemState.classList.toggle("stale", stale);
+  const indicator = document.createElement("i");
+  systemState.replaceChildren(indicator, document.createTextNode(` ${label}`));
 }
 
 function storyCard(story) {
@@ -42,7 +50,9 @@ function storyCard(story) {
   card.querySelector(".why p").textContent = story.why_it_matters;
   addEvidence(card.querySelector(".evidence"), story);
   card.querySelector(".source").textContent = story.source;
-  card.querySelector("time").textContent = dateText(story.published_at);
+  const published = card.querySelector("time");
+  published.textContent = dateText(story.published_at);
+  if (story.published_at) published.dateTime = story.published_at;
   const link = card.querySelector("a");
   link.href = story.source_url;
   link.setAttribute("aria-label", `Read ${story.title} at ${story.source}`);
@@ -52,12 +62,30 @@ function storyCard(story) {
 function render() {
   const category = $("#category-filter").value;
   const severity = $("#severity-filter").value;
+  const leadId = state.stories[0]?.id;
   const stories = state.stories.filter((story) =>
+    story.id !== leadId &&
     (!category || story.category === category) && (!severity || story.severity === severity));
   const grid = $("#story-grid");
   grid.replaceChildren(...stories.map(storyCard));
   $("#result-count").textContent = `${stories.length} ${stories.length === 1 ? "story" : "stories"}`;
   $("#empty-state").hidden = stories.length !== 0;
+}
+
+function updateHealth(digest) {
+  const generated = new Date(digest.generated_at);
+  const ageHours = (Date.now() - generated.getTime()) / 36e5;
+  const stale = Number.isNaN(generated.valueOf()) || ageHours > FRESHNESS_LIMIT_HOURS;
+  setSystemState(stale ? "BRIEF STALE" : "BRIEF ONLINE", stale);
+  const warning = $("#stale-warning");
+  warning.hidden = !stale;
+
+  const statuses = Array.isArray(digest.source_status) ? digest.source_status : [];
+  const healthy = statuses.filter((source) => source.status !== "failed").length;
+  const failed = statuses.filter((source) => source.status === "failed").map((source) => source.source);
+  $("#source-status").textContent = statuses.length
+    ? `${healthy}/${statuses.length} sources responding${failed.length ? ` · Failed: ${failed.join(", ")}` : ""}`
+    : "Source health unavailable";
 }
 
 function renderLead(story) {
@@ -91,6 +119,8 @@ async function init() {
     if (!Array.isArray(digest.stories)) throw new Error("Invalid digest");
     state.stories = digest.stories;
     $("#generated-at").textContent = dateText(digest.generated_at, true);
+    if (digest.generated_at) $("#generated-at").dateTime = digest.generated_at;
+    updateHealth(digest);
     $("#metric-collected").textContent = digest.articles_collected;
     $("#metric-published").textContent = digest.stories_published ?? digest.stories.length;
     $("#metric-critical").textContent = digest.critical_count;
@@ -105,6 +135,9 @@ async function init() {
     render();
   } catch (error) {
     $("#generated-at").textContent = "Digest unavailable";
+    setSystemState("BRIEF UNAVAILABLE", true);
+    $("#stale-warning").hidden = false;
+    $("#source-status").textContent = "Source health unavailable";
     $("#empty-state").textContent = "The validated intelligence feed could not be loaded. Please try again later.";
     $("#empty-state").hidden = false;
     console.error(error);

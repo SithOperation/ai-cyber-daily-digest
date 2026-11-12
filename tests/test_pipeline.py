@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from feeds import canonical_url, clean_text
+from feeds import canonical_url, clean_text, entry_summary
 from ranker import deduplicate, enrich, rank_articles
 from summarizer import build_digest
 from validator import validate_digest
@@ -29,6 +29,10 @@ class PipelineTests(unittest.TestCase):
     def test_untrusted_html_is_removed(self):
         self.assertEqual(clean_text("<script>alert(1)</script><b>Safe</b>"), "alert(1) Safe")
         self.assertEqual(canonical_url("javascript:alert(1)"), "")
+
+    def test_malformed_feed_content_does_not_raise(self):
+        self.assertEqual(entry_summary({"content": []}), "")
+        self.assertEqual(entry_summary({"content": {"value": "<b>Safe</b>"}}), "Safe")
 
     def test_extracts_only_explicit_cve_evidence(self):
         result = enrich(article(

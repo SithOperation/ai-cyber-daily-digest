@@ -12,13 +12,13 @@
   <header class="masthead">
     <nav class="nav" aria-label="Primary">
       <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">A/C</span><span>INTELLIGENCE DIGEST</span></a>
-      <span class="system-state"><i></i> DAILY BRIEF ONLINE</span>
+      <span id="system-state" class="system-state" role="status" aria-live="polite"><i></i> LOADING BRIEF</span>
     </nav>
     <div class="hero">
       <p class="eyebrow">AUTOMATED CYBER + AI MONITORING</p>
       <h1>Signals worth<br><em>acting on.</em></h1>
       <p class="dek">A concise, evidence-led briefing that filters noise, consolidates reporting, and ranks the developments defenders need to understand.</p>
-      <div class="update-line"><span>LAST INTELLIGENCE UPDATE</span><time id="generated-at">Loading…</time></div>
+      <div class="update-line"><span>LAST INTELLIGENCE UPDATE</span><time id="generated-at" aria-live="polite">Loading…</time><span id="stale-warning" class="stale-warning" hidden>Feed freshness needs attention</span></div>
     </div>
   </header>
 
@@ -44,12 +44,13 @@
         </div>
         <p id="result-count" aria-live="polite"></p>
       </div>
+      <p id="source-status" class="source-status" aria-live="polite"></p>
       <div class="filters" aria-label="Filter stories">
         <label>Category<select id="category-filter"><option value="">All categories</option></select></label>
         <label>Severity<select id="severity-filter"><option value="">All severities</option><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select></label>
       </div>
       <div id="story-grid" class="story-grid"></div>
-      <div id="empty-state" class="empty-state" hidden>No stories match these filters.</div>
+      <div id="empty-state" class="empty-state" role="status" aria-live="polite" hidden>No stories match these filters.</div>
     </section>
   </main>
 

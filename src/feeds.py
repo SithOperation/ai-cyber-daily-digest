@@ -53,6 +53,18 @@ def parse_date(item: dict) -> str | None:
     return None
 
 
+def entry_summary(item: dict) -> str:
+    """Read common RSS summary shapes without allowing malformed items to abort a feed."""
+    content = item.get("content")
+    if isinstance(content, list):
+        content_value = content[0].get("value") if content and isinstance(content[0], dict) else ""
+    elif isinstance(content, dict):
+        content_value = content.get("value")
+    else:
+        content_value = ""
+    return clean_text(item.get("summary") or item.get("description") or content_value, 2000)
+
+
 def collect_articles(feeds: list[dict], seen: set[str]) -> tuple[list[dict], list[dict]]:
     articles: list[dict] = []
     statuses: list[dict] = []
@@ -70,32 +82,31 @@ def collect_articles(feeds: list[dict], seen: set[str]) -> tuple[list[dict], lis
                 raise ValueError(f"invalid feed: {parsed.bozo_exception}")
 
             for item in parsed.entries[:MAX_PER_FEED]:
-                url = canonical_url(item.get("link", ""))
-                title = clean_text(item.get("title"), 300)
-                if not url or not title or url in seen:
-                    continue
-                published_at = parse_date(item)
-                if published_at and date_parser.isoparse(published_at) < cutoff:
-                    continue
-                summary = clean_text(
-                    item.get("summary") or item.get("description") or item.get("content", [{}])[0].get("value"),
-                    2000,
-                )
-                articles.append(
-                    {
-                        "id": hashlib.sha256(url.encode()).hexdigest()[:16],
-                        "title": title,
-                        "source": source["name"],
-                        "source_url": url,
-                        "published_at": published_at,
-                        "collected_at": datetime.now(timezone.utc).isoformat(),
-                        "raw_summary": summary,
-                        "source_kind": source["kind"],
-                    }
-                )
-                status["articles"] += 1
+                try:
+                    url = canonical_url(item.get("link", ""))
+                    title = clean_text(item.get("title"), 300)
+                    if not url or not title or url in seen:
+                        continue
+                    published_at = parse_date(item)
+                    if published_at and date_parser.isoparse(published_at) < cutoff:
+                        continue
+                    articles.append(
+                        {
+                            "id": hashlib.sha256(url.encode()).hexdigest()[:16],
+                            "title": title,
+                            "source": source["name"],
+                            "source_url": url,
+                            "published_at": published_at,
+                            "collected_at": datetime.now(timezone.utc).isoformat(),
+                            "raw_summary": entry_summary(item),
+                            "source_kind": source["kind"],
+                        }
+                    )
+                    status["articles"] += 1
+                except (AttributeError, IndexError, TypeError, ValueError) as exc:
+                    LOG.warning("Skipping malformed item from %s: %s", source["name"], exc)
             status["status"] = "success" if status["articles"] else "no_new_articles"
-        except (requests.RequestException, ValueError, AttributeError) as exc:
+        except (requests.RequestException, ValueError, AttributeError, TypeError) as exc:
             status["error"] = clean_text(exc, 300)
             LOG.warning("Source failed: %s (%s)", source["name"], exc)
         statuses.append(status)

@@ -1,198 +1,198 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-08-26T13:43:14.495077+00:00
+Generated: 2026-11-12T16:46:21.169104+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
 ## Critical stories
 
-### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/08/25/cisa-adds-one-known-exploited-vulnerability-catalog)
+### [CISA Adds Six Known Exploited Vulnerabilities to Catalog](https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog)
 
 **Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
 
-CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
+CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
-**CVEs:** CVE-2026-60004
+**CVEs:** CVE-2026-111560, CVE-2026-111793, CVE-2026-116606, CVE-2026-124194, CVE-2026-125350, CVE-2026-20320
 
 ## Other notable developments
 
-### [U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches](https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html)
+### [Siemens Desigo, Gridscale](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02)
 
-**Medium · Nation-State Activity · Score 24 · The Hacker News**
+**Medium · Critical Vulnerabilities · Score 28 · CISA Cybersecurity Advisories**
 
-The U.S.
+View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as "Node2Shell" (tracked as CVE-2026-111497).
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
 
-### [Ebyte NE2-D11](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-06)
+**CVEs:** CVE-2026-111497
 
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+### [Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass](https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html)
 
-View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized administrative access, disclose sensitive information, modify device configuration, hijack authenticated sessions, and disrupt device operation.
+**Medium · Cloud Security · Score 26 · The Hacker News**
 
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass.
 
-**CVEs:** CVE-2026-73125
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
 
-### [Rently Smart Home](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-01)
+**CVEs:** CVE-2026-120868
 
-**Medium · Privacy · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to access sensitive information and override user permissions.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-75960
-
-### [PayRange API](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-04)
-
-**Medium · Privacy · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow a remote, authenticated or unauthenticated attacker to disclose sensitive information, arbitrarily modify the device to cause a denial of service, or alter a devices displayed image.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-18965
-
-### [Zoneminder](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-02)
-
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could result in full Remote Code Execution (RCE) as the web server user.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-76060
-
-### [Siemens SIMATIC IoT2050 Advanced](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-03)
-
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary SIMATIC IoT2050 Advanced devices running Industrial OS with Node-RED installed contain a missing authentication vulnerability in the Node-RED HTTP interface that could allow an unauthenticated remote attacker to create malicious flows and execute arbitrary code on the underlying server with maximum privileges.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-58115
-
-### [FURUNO FA-50 Class B AIS Transponder](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-07)
+### [Siemens RUGGEDCOM APE1808](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05)
 
 **Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
 
-View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to alter device settings.
+View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-59769, CVE-2026-67578
+**CVEs:** CVE-2026-109618, CVE-2026-109619
 
-### [Bendix EC80 Brake ECU](https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-05)
+### [SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths](https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html)
 
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+**Medium · Malware · Score 22 · The Hacker News**
 
-View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause the loss of ABS functions, steering assist, speedometer, shifting capabilities, or disable automatic traction control.
+The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-67560
+**CVEs:** CVE-2026-84869
 
-### [Hospital operator Nutex Health says data stolen in cyberattack](https://www.bleepingcomputer.com/news/security/hospital-operator-nutex-health-says-data-stolen-in-cyberattack/)
+### [Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation](https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html)
 
-**Medium · Data Breaches · Score 22 · BleepingComputer**
+**Medium · Cloud Security · Score 22 · The Hacker News**
 
-Healthcare and services provider Nutex is investigating a data breach incident where an unauthorized third party exfiltrated information from company servers.
+Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems.
 
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-### [A Tale of Two SOCs: Insights From Two Red Team Assessments](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-237a)
+**CVEs:** CVE-2026-108186
 
-**Medium · Government Advisories · Score 20 · CISA Cybersecurity Advisories**
+### [Microsoft Fixes Nearly 1,100 Security Vulnerabilities](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
 
-Advisory at a Glance Title A Tale of Two SOCs: Insights From Two Red Team Assessments Original Publication August 25, 2026 Executive Summary The Cybersecurity and Infrastructure Security Agency (CISA) conducted simultaneous red team assessments at two organizations and observed different defensive outcomes.
+**Medium · Active Exploitation · Score 22 · Krebs on Security**
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [CISA: Over 100 Internet-Exposed Water Systems Targeted in July Cyberattacks](https://www.securityweek.com/cisa-over-100-internet-exposed-water-systems-targeted-in-july-cyberattacks/)
-
-**Low · Nation-State Activity · Score 12 · SecurityWeek**
-
-The agency has released guidance on reducing internet exposure in the wake of the recent Iran-linked hacker attacks.
+Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Sensitive Information Exposed in Nutex Health Data Breach](https://www.securityweek.com/sensitive-information-exposed-in-nutex-health-data-breach/)
+### [New Windows SignDrop zero-day gives hackers SYSTEM privileges](https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/)
 
-**Low · Data Breaches · Score 10 · SecurityWeek**
+**Medium · Active Exploitation · Score 18 · BleepingComputer**
 
-Nutex Health has informed the SEC that it recently detected unauthorized access and data exfiltration.
+Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges.
 
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [LACMA data breach last year exposed social security and medical data](https://www.bleepingcomputer.com/news/security/lacma-data-breach-last-year-exposed-social-security-and-medical-data/)
+### [Hackers Target N-central Zero-Days as N-able Rushes Patches](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
+
+**Medium · Active Exploitation · Score 18 · SecurityWeek**
+
+The malicious activity started shortly after a researcher dropped over 30 zero-days.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [N-able releases security hotfixes for zero-day vulnerabilities](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
+
+**Medium · Active Exploitation · Score 18 · BleepingComputer**
+
+N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Maersk Confirms Data Theft Amid $5 Million Extortion Attempt](https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/)
+
+**Low · Ransomware · Score 12 · SecurityWeek**
+
+The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Who Runs the Ransomware Group Qilin?](https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/)
+
+**Low · Ransomware · Score 12 · Krebs on Security**
+
+The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Maersk confirms data breach as WhiteArmor ransomware demands $5 million](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
+
+**Low · Ransomware · Score 12 · BleepingComputer**
+
+Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Baker Tilly notifies clients of data breach at third-party provider](https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/)
 
 **Low · Data Breaches · Score 10 · BleepingComputer**
 
-The Los Angeles County Museum of Art (LACMA) has announced that a breach last year exposed customer and employee information.
+The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [Hackers now exploit critical Gitea flaw in code injection attacks](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-gitea-flaw-in-code-injection-attacks/)
+### [PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
 
-**Low · Government Advisories · Score 8 · BleepingComputer**
+**Low · Critical Vulnerabilities · Score 8 · The Hacker News**
 
-Attackers are now exploiting a critical-severity vulnerability in the Gitea self-hosted Git service, according to the U.S.
+PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-126325
+
+### [Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html)
+
+**Low · Critical Vulnerabilities · Score 8 · The Hacker News**
+
+A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-119618
+
+### [Microsoft confirms Windows security updates installation issues](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/)
+
+**Low · General Cybersecurity · Score 4 · BleepingComputer**
+
+Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code](https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html)
+### [Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover](https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html)
 
-**Low · Cloud Security · Score 4 · The Hacker News**
+**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-The CERT Coordination Center (CERT/CC) has disclosed two unpatched vulnerabilities in Kaltura's HTML5 video player library that allow a remote, unauthenticated attacker to read arbitrary files from a server and execute code on it.
+A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-19912, CVE-2026-19913
+**CVEs:** CVE-2026-118383
 
-### [Ubiquiti patches three max severity security vulnerabilities](https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/)
+### [Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data](https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html)
 
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
+**Low · General Cybersecurity · Score 4 · The Hacker News**
 
-Ubiquiti has released security patches for three new maximum-severity vulnerabilities that threat actors can exploit remotely without privileges.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Adobe and Nvidia Patch Dozens of Vulnerabilities](https://www.securityweek.com/adobe-and-nvidia-patch-dozens-of-vulnerabilities/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Adobe and Nvidia each published several advisories, including ones that address critical vulnerabilities in their products.
+A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Microsoft tests new privacy controls for Windows 11 desktop apps](https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-privacy-controls-for-windows-11-desktop-apps/)
+### [Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes](https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html)
 
-**Low · Privacy · Score 0 · BleepingComputer**
+**Low · Cloud Security · Score 4 · The Hacker News**
 
-Microsoft has begun testing new privacy controls that will let Windows 11 users choose which desktop applications can access their camera, microphone, and precise location.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Imagine the SOC Without a Queue: From Alert Backlog to AI Hypothesis Engine](https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-The SOC we've always known was built around a model that guarantees most of the alert queue will never receive analyst review.
+Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
 ## Sources
 
-- The Hacker News: success (12 new)
-- BleepingComputer: success (10 new)
-- Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (8 new)
-- CISA Cybersecurity Advisories: success (9 new)
-- MIT News AI: success (1 new)
-- Google AI: success (1 new)
-- OpenAI News: success (4 new)
+- The Hacker News: success (25 new)
+- BleepingComputer: success (15 new)
+- Krebs on Security: success (2 new)
+- SecurityWeek: success (10 new)
+- CISA Cybersecurity Advisories: success (7 new)
+- MIT News AI: success (4 new)
+- Google AI: success (6 new)
+- OpenAI News: success (15 new)

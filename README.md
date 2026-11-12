@@ -60,4 +60,4 @@ Severity thresholds are Critical (55+), High (32–54), Medium (14–31), and Lo
 
 ## Automation
 
-`.github/workflows/ai-cyber-digest.yml` runs at approximately 9:00 AM in `America/New_York`, including daylight-saving changes. It installs pinned dependencies, tests, generates, validates, and commits only when staged artifacts actually changed. No credentials are hardcoded or required.
+`.github/workflows/ai-cyber-digest.yml` runs daily at 14:00 UTC (approximately 9:00 AM Eastern during standard time). The workflow does not require an exact local start hour because GitHub may delay scheduled jobs. It installs pinned dependencies, tests, generates, validates, and commits only when staged artifacts actually changed. No credentials are hardcoded or required.

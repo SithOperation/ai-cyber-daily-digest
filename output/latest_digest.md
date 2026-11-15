@@ -1,86 +1,66 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-11-14T18:55:53.106158+00:00
+Generated: 2026-11-15T19:32:05.789731+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
-## Critical stories
-
-### [Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection](https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html)
-
-**Critical · Active Exploitation · Score 59 · The Hacker News**
-
-The U.S.
-
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
-
-**CVEs:** CVE-2026-114713
-
 ## Other notable developments
 
-### [US disrupts North Korean campaign behind $400 million crypto theft](https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/)
+### [TSMC employee data breach linked to cloud provider](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
 
-**Low · Nation-State Activity · Score 12 · BleepingComputer**
+**Low · Data Breaches · Score 10 · BleepingComputer**
 
-The U.S.
+Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction.
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [Cursor confirms security breach led to malicious Claude Code extension](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/)
+### [FBI warns ARTEX AI hacking tool is powering global cyberattacks](https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/)
 
 **Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI.
+The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Is AI Making Us Worse at Cybersecurity?](https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/)
+### [Pentagon Renames CDAO ‘Super Intelligence Office’](https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/)
 
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
+**Low · Artificial Intelligence · Score 0 · SecurityWeek**
 
-Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Apple Reveals How Secure Exclaves Shield Camera and Microphone Data](https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update](https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’](https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Shield helps technicians hand off legacy portal work with OpenAI](https://openai.com/business/customer-stories/shield)
-
-**Low · Artificial Intelligence · Score 0 · OpenAI News**
-
-Shield uses OpenAI to help IT technicians hand off work in legacy portals.
+The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
+### [Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent](https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html)
+
+**Low · Privacy · Score 0 · The Hacker News**
+
+Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
+
+**Low · Malware · Score 0 · The Hacker News**
+
+The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook](https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+The directive protects smartphones as part of a person’s private sphere and requires “free and informed consent” for such access, the authority said.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
 ## Sources
 
-- The Hacker News: success (1 new)
+- The Hacker News: success (2 new)
 - BleepingComputer: success (2 new)
 - Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (4 new)
+- SecurityWeek: success (2 new)
 - CISA Cybersecurity Advisories: no_new_articles (0 new)
 - MIT News AI: no_new_articles (0 new)
 - Google AI: no_new_articles (0 new)
-- OpenAI News: success (1 new)
+- OpenAI News: no_new_articles (0 new)

@@ -1,66 +1,180 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-11-15T19:32:05.789731+00:00
+Generated: 2026-11-16T23:10:54.122970+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
 ## Other notable developments
 
-### [TSMC employee data breach linked to cloud provider](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
+### [Google Project Zero Sets Course for 30-Day Disclosure Deadline](https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/)
+
+**Medium · Active Exploitation · Score 18 · SecurityWeek**
+
+It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days](https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html)
+
+**Medium · Active Exploitation · Score 18 · The Hacker News**
+
+A default password opened doors it never should have.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Fandango says hackers stole payment card details from checkout pages](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
 
 **Low · Data Breaches · Score 10 · BleepingComputer**
 
-Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction.
+Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [FBI warns ARTEX AI hacking tool is powering global cyberattacks](https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/)
+### [Uber Data Breach Impacts 150,000 People](https://www.securityweek.com/uber-data-breach-impacts-150000-people/)
 
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
+**Low · Data Breaches · Score 10 · SecurityWeek**
 
-The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments.
+Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers.
+
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+
+### [Microsoft: Windows Server 2016 reaches end of support in 60 days](https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/)
+
+**Low · General Cybersecurity · Score 4 · BleepingComputer**
+
+Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Pentagon Renames CDAO ‘Super Intelligence Office’](https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/)
+### [Recent UnrealIRCd Vulnerability Exploited in Attacks](https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/)
 
-**Low · Artificial Intelligence · Score 0 · SecurityWeek**
+**Low · Critical Vulnerabilities · Score 4 · SecurityWeek**
 
-The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications.
+Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-114713
+
+### [Microsoft pushes Windows emergency updates to fix activation failures](https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/)
+
+**Low · General Cybersecurity · Score 4 · BleepingComputer**
+
+Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Gemini AI agents repeatedly bypassed safeguards to attack real website](https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/)
+
+**Low · Artificial Intelligence · Score 0 · BleepingComputer**
+
+Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
-### [Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent](https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html)
+### [Google Project Zero cuts bug disclosures to 30 days amid AI threats](https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/)
 
-**Low · Privacy · Score 0 · The Hacker News**
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
-
-**Low · Malware · Score 0 · The Hacker News**
-
-The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.
+Google Project Zero will replace its "90+30" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook](https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/)
+### [California sues OpenAI over AI agents escaping sandboxes, hacking firms](https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/)
+
+**Low · Artificial Intelligence · Score 0 · BleepingComputer**
+
+California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organizations.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [Trump Administration Moves to Block China From Indirect Access to American AI Technology](https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/)
 
 **Low · General Cybersecurity · Score 0 · SecurityWeek**
 
-The directive protects smartphones as part of a person’s private sphere and requires “free and informed consent” for such access, the authority said.
+Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Barracuda links cloud breach to ARTEX AI-powered cyberattack](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Broadening access to AI for scientists](https://openai.com/index/expanding-chatgpt-for-academic-researchers)
+
+**Low · Artificial Intelligence · Score 0 · OpenAI News**
+
+We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [Strengthening the fight against online child sexual abuse with new tools and support](https://openai.com/index/strengthening-online-child-safety)
+
+**Low · Artificial Intelligence · Score 0 · OpenAI News**
+
+New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [Microsoft says months-old bug caused global Microsoft 365 outage](https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Cursor Supply Chain Attack Started at Fireworks AI](https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/)
+
+**Low · Supply Chain · Score 0 · SecurityWeek**
+
+The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks](https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+Chinese threat actors are broadly adopting the agentic AI penetration testing framework to accelerate their attacks.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [7 Tips For Complying with CJIS Password and MFA Requirements](https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/)
+
+**Low · Critical Vulnerabilities · Score 0 · BleepingComputer**
+
+The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches](https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html)
+
+**Low · Artificial Intelligence · Score 0 · The Hacker News**
+
+Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [Google warns that fully-automated AI attacks are coming soon](https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
 ## Sources
 
-- The Hacker News: success (2 new)
-- BleepingComputer: success (2 new)
+- The Hacker News: success (7 new)
+- BleepingComputer: success (13 new)
 - Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (2 new)
+- SecurityWeek: success (10 new)
 - CISA Cybersecurity Advisories: no_new_articles (0 new)
 - MIT News AI: no_new_articles (0 new)
-- Google AI: no_new_articles (0 new)
-- OpenAI News: no_new_articles (0 new)
+- Google AI: success (1 new)
+- OpenAI News: success (11 new)

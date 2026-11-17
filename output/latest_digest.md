@@ -1,180 +1,206 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-11-16T23:10:54.122970+00:00
+Generated: 2026-11-17T21:59:32.105086+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
+## Critical stories
+
+### [CISA Adds One Known Exploited Vulnerability to Catalog](https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog)
+
+**Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
+
+CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
+
+**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+
+**CVEs:** CVE-2026-115731
+
+## High-priority stories
+
+### [N-able Kills Legacy APIs, Patches 17 N-central Zero-Days](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
+
+**High · Active Exploitation · Score 43 · SecurityWeek**
+
+The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild.
+
+**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
+
 ## Other notable developments
 
-### [Google Project Zero Sets Course for 30-Day Disclosure Deadline](https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/)
+### [Siemens Industrial Automation Software Products](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03)
 
-**Medium · Active Exploitation · Score 18 · SecurityWeek**
+**Medium · Critical Vulnerabilities · Score 28 · CISA Cybersecurity Advisories**
 
-It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028.
+View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as "Node2Shell" (tracked as CVE-2026-111497).
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
 
-### [⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days](https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html)
+**CVEs:** CVE-2026-111497
 
-**Medium · Active Exploitation · Score 18 · The Hacker News**
+### [Dorsett Controls InfoScan](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01)
 
-A default password opened doors it never should have.
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Fandango says hackers stole payment card details from checkout pages](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
-
-**Low · Data Breaches · Score 10 · BleepingComputer**
-
-Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.
-
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
-
-### [Uber Data Breach Impacts 150,000 People](https://www.securityweek.com/uber-data-breach-impacts-150000-people/)
-
-**Low · Data Breaches · Score 10 · SecurityWeek**
-
-Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers.
-
-**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
-
-### [Microsoft: Windows Server 2016 reaches end of support in 60 days](https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/)
-
-**Low · General Cybersecurity · Score 4 · BleepingComputer**
-
-Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Recent UnrealIRCd Vulnerability Exploited in Attacks](https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/)
-
-**Low · Critical Vulnerabilities · Score 4 · SecurityWeek**
-
-Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges.
+View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-114713
+**CVEs:** CVE-2026-117659
 
-### [Microsoft pushes Windows emergency updates to fix activation failures](https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/)
+### [Siemens Mendix Studio Pro](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data access, tool execution, or system compromise.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-112136
+
+### [Siemens meta-iot2050](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-109830
+
+### [Siemens SIMATIC WinCC](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-59082
+
+### [Siemens RUGGEDCOM APE1808](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-106175
+
+### [Siemens .NET Client Library for SIMATIC S7 Webserver API](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02)
+
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-85114, CVE-2026-85115
+
+### [Siemens ROS#](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-109097
+
+### [Siemens Simcenter Femap](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-64629
+
+### [Ransomware affiliate suspect extradited to US, faces 27 years in prison](https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/)
+
+**Medium · Ransomware · Score 24 · BleepingComputer**
+
+A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Access Dental Management Data Breach Impacts Over 340,000](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
+
+**Low · Data Breaches · Score 10 · SecurityWeek**
+
+Hackers breached Access Dental’s network and stole personal, health, and insurance information.
+
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+
+### [Uber notifies drivers of data breach affecting nearly 150,000 people](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
+
+**Low · Data Breaches · Score 10 · BleepingComputer**
+
+Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.
+
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
+
+### [Tor releases emergency update amid ongoing DDoS attack](https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/)
 
 **Low · General Cybersecurity · Score 4 · BleepingComputer**
 
-Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates.
+The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Gemini AI agents repeatedly bypassed safeguards to attack real website](https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/)
+### [Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html)
 
-**Low · Artificial Intelligence · Score 0 · BleepingComputer**
+**Low · Cloud Security · Score 4 · The Hacker News**
 
-Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems.
+Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK.
 
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-### [Google Project Zero cuts bug disclosures to 30 days amid AI threats](https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/)
+**CVEs:** CVE-2026-114938
+
+### [MSP ScreenConnect Servers Targeted in Month-Long Campaign](https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/)
+
+**Low · Critical Vulnerabilities · Score 4 · SecurityWeek**
+
+More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-84869
+
+### [Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission](https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html)
+
+**Low · General Cybersecurity · Score 4 · The Hacker News**
+
+A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped "Don't Allow" on the microphone prompt.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners](https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html)
+
+**Low · Cloud Security · Score 4 · The Hacker News**
+
+N-able has released a new security update to address additional critical security flaws impacting N-central.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Cloud keys leaked in Docker Hub images are stolen within seconds](https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/)
 
 **Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Google Project Zero will replace its "90+30" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [California sues OpenAI over AI agents escaping sandboxes, hacking firms](https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/)
-
-**Low · Artificial Intelligence · Score 0 · BleepingComputer**
-
-California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organizations.
-
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
-
-### [Trump Administration Moves to Block China From Indirect Access to American AI Technology](https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Barracuda links cloud breach to ARTEX AI-powered cyberattack](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)
-
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
-
-Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Broadening access to AI for scientists](https://openai.com/index/expanding-chatgpt-for-academic-researchers)
-
-**Low · Artificial Intelligence · Score 0 · OpenAI News**
-
-We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.
-
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
-
-### [Strengthening the fight against online child sexual abuse with new tools and support](https://openai.com/index/strengthening-online-child-safety)
-
-**Low · Artificial Intelligence · Score 0 · OpenAI News**
-
-New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.
-
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
-
-### [Microsoft says months-old bug caused global Microsoft 365 outage](https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/)
-
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
-
-Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Cursor Supply Chain Attack Started at Fireworks AI](https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/)
-
-**Low · Supply Chain · Score 0 · SecurityWeek**
-
-The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks](https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/)
-
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
-
-Chinese threat actors are broadly adopting the agentic AI penetration testing framework to accelerate their attacks.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [7 Tips For Complying with CJIS Password and MFA Requirements](https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/)
-
-**Low · Critical Vulnerabilities · Score 0 · BleepingComputer**
-
-The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches](https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html)
-
-**Low · Artificial Intelligence · Score 0 · The Hacker News**
-
-Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.
-
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
-
-### [Google warns that fully-automated AI attacks are coming soon](https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/)
-
-**Low · General Cybersecurity · Score 0 · BleepingComputer**
-
-Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed.
+Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
 ## Sources
 
-- The Hacker News: success (7 new)
-- BleepingComputer: success (13 new)
+- The Hacker News: success (10 new)
+- BleepingComputer: success (12 new)
 - Krebs on Security: no_new_articles (0 new)
 - SecurityWeek: success (10 new)
-- CISA Cybersecurity Advisories: no_new_articles (0 new)
-- MIT News AI: no_new_articles (0 new)
+- CISA Cybersecurity Advisories: success (12 new)
+- MIT News AI: success (3 new)
 - Google AI: success (1 new)
-- OpenAI News: success (11 new)
+- OpenAI News: success (5 new)

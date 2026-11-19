@@ -1,192 +1,192 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-11-18T21:41:30.118099+00:00
+Generated: 2026-11-19T21:57:34.008064+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
-## Critical stories
+## High-priority stories
 
-### [Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
+### [CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
 
-**Critical · Active Exploitation · Score 67 · The Hacker News**
+**High · Active Exploitation · Score 45 · The Hacker News**
 
 The U.S.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
-**CVEs:** CVE-2026-115731
-
-### [CISA Adds Four Known Exploited Vulnerabilities to Catalog](https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog)
-
-**Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
-
-CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
-
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
-
-**CVEs:** CVE-2024-10441, CVE-2026-40217, CVE-2026-90436, CVE-2026-90817
-
-## High-priority stories
-
-### [Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html)
-
-**High · Active Exploitation · Score 47 · The Hacker News**
-
-A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.
-
-**Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
-
-**CVEs:** CVE-2026-129448
-
 ## Other notable developments
 
-### [Critical Java Vulnerability Requires Immediate Patching](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching)
+### [Elecbrakes EB2, VM1, ELBC2000](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02)
 
-**Low · Cloud Security · Score 12 · CISA Cybersecurity Advisories**
+**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
 
-Purpose CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938 .
+View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-114938
+**CVEs:** CVE-2026-124281, CVE-2026-125273, CVE-2026-96805
 
-### [Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization](https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/)
+### [libumqtt](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03)
 
-**Low · Nation-State Activity · Score 12 · SecurityWeek**
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
 
-Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization.
+View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-125132
+
+### [Autonomy Logic OpenPLC Runtime](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01)
+
+**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
+
+View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-126088
+
+### [Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/)
+
+**Medium · Active Exploitation · Score 18 · SecurityWeek**
+
+Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization](https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html)
+### [Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html)
 
-**Low · Nation-State Activity · Score 12 · The Hacker News**
+**Medium · Critical Vulnerabilities · Score 18 · The Hacker News**
 
-The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise.
+A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Data breach impacts 40 Irish credit unions in reported IT provider hack](https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/)
+### [Five warning signs of ransomware breach before encryption or data theft](https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/)
+
+**Low · Ransomware · Score 12 · BleepingComputer**
+
+Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Nvidia Responds to Gentlemen Ransomware Claim](https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/)
+
+**Low · Ransomware · Score 12 · SecurityWeek**
+
+Nvidia says it has found no indication that its systems were compromised after the Gentlemen ransomware group listed the company as a victim.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [NVIDIA investigating Gentlemen ransomware breach claims](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
+
+**Low · Ransomware · Score 12 · BleepingComputer**
+
+NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms](https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/)
+
+**Low · Ransomware · Score 12 · BleepingComputer**
+
+Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Transport for London breach exposes 265,000 Oyster card users' data](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/)
 
 **Low · Data Breaches · Score 10 · BleepingComputer**
 
-A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland.
+Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [VeroSecurity Raises $11 Million for AI Security Engineering Platform](https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/)
+### [ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories](https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html)
 
-**Low · AI Security · Score 8 · SecurityWeek**
+**Low · AI Security · Score 8 · The Hacker News**
 
-AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity.
+The easiest way to fool someone is to give them something they already expect.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
-### [10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
+### [PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution](https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html)
+
+**Low · Cloud Security · Score 8 · The Hacker News**
+
+The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-115560
+
+### [phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution](https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html)
 
 **Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.
+PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-123007
+**CVEs:** CVE-2026-126714
 
-### [Apache warns of Roller RCE vulnerability exploited in attacks](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
+### [PHP security updates fix 18 flaws, including critical RCE bugs](https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/)
 
-**Low · Critical Vulnerabilities · Score 4 · BleepingComputer**
+**Low · Cloud Security · Score 4 · BleepingComputer**
 
-Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [This featherweight, flying robot carries its own sensors and computers](https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118)
-
-**Low · Privacy · Score 0 · MIT News AI**
-
-The speedy microrobot flies without an attached motion-capture system, moving it closer to applications like agriculture or industrial surveillance.
+The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE](https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html)
+### [Everything Is a Web Application, Including Your Firewall](https://thehackernews.com/2026/11/everything-is-web-application-including.html)
 
-**Low · Cloud Security · Score 0 · The Hacker News**
+**Low · Cloud Security · Score 4 · The Hacker News**
 
-Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts.
+One of the early targets of PHP2Shell exploitation was the firewall.
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-### [The Gemini app is now available on lower-memory Android devices.](https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/)
+**CVEs:** CVE-2026-109618, CVE-2026-109619
 
-**Low · Artificial Intelligence · Score 0 · Google AI**
+### [Splunk Patches Nearly 140 Flaws Across Three Core Products](https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/)
 
-The Google Gemini app now supports lower-memory Android devices.
+**Low · Cloud Security · Score 4 · SecurityWeek**
 
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
-
-### [Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials](https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz.
+The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters](https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/)
+### [ASUS warns of critical hard-coded key flaw in Control Center Express](https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/)
 
 **Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems.
+ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks](https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html)
+### [Introducing Tool Retrieval in the Gemini API](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/)
 
-**Low · Malware · Score 0 · The Hacker News**
+**Low · Artificial Intelligence · Score 0 · Google AI**
 
-The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines.
+Gemini spark on a space background
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
-### [Last of Five Defendants Sentenced in US Scattered Spider Hacking Case](https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/)
+### [Walter Isaacson on curiosity and creativity in the AI age.](https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/)
 
-**Low · General Cybersecurity · Score 0 · SecurityWeek**
+**Low · Artificial Intelligence · Score 0 · Google AI**
 
-British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced.
+Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age.
 
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years](https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor](https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html)
-
-**Low · General Cybersecurity · Score 0 · The Hacker News**
-
-TL;DR Attackers move first.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Microsoft Takes Perception Agentic Security Platform Out of Preview](https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/)
-
-**Low · Critical Vulnerabilities · Score 0 · SecurityWeek**
-
-Four blue team agents and the Recon Agent are now generally available, while integrations and vulnerability shielding are in preview.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
 ## Sources
 
-- The Hacker News: success (12 new)
-- BleepingComputer: success (9 new)
-- Krebs on Security: success (1 new)
+- The Hacker News: success (11 new)
+- BleepingComputer: success (10 new)
+- Krebs on Security: no_new_articles (0 new)
 - SecurityWeek: success (10 new)
-- CISA Cybersecurity Advisories: success (2 new)
-- MIT News AI: success (2 new)
-- Google AI: success (1 new)
-- OpenAI News: success (6 new)
+- CISA Cybersecurity Advisories: success (3 new)
+- MIT News AI: success (1 new)
+- Google AI: success (2 new)
+- OpenAI News: success (3 new)

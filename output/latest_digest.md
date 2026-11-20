@@ -1,192 +1,188 @@
 # AI & Cyber Intelligence Digest
 
-Generated: 2026-11-19T21:57:34.008064+00:00
+Generated: 2026-11-20T21:39:35.231581+00:00
 
 A prioritized briefing of recent cybersecurity and artificial intelligence developments.
 
-## High-priority stories
+## Critical stories
 
-### [CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
+### [CISA Adds Four Known Exploited Vulnerabilities to Catalog](https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog)
 
-**High · Active Exploitation · Score 45 · The Hacker News**
+**Critical · Active Exploitation · Score 61 · CISA Cybersecurity Advisories**
 
-The U.S.
+CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.
 
 **Why it matters:** Defenders should treat this as an immediate exposure-management priority, confirm whether affected systems are internet-facing, review available indicators, and apply verified vendor mitigations or updates.
 
+**CVEs:** CVE-2025-42884, CVE-2026-123890, CVE-2026-129448, CVE-2026-76466
+
 ## Other notable developments
 
-### [Elecbrakes EB2, VM1, ELBC2000](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02)
+### [VMware patches vCenter zero-day exploited in attacks since September](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/)
 
-**Medium · Critical Vulnerabilities · Score 24 · CISA Cybersecurity Advisories**
+**Medium · Active Exploitation · Score 22 · BleepingComputer**
 
-View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-124281, CVE-2026-125273, CVE-2026-96805
-
-### [libumqtt](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03)
-
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-125132
-
-### [Autonomy Logic OpenPLC Runtime](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01)
-
-**Medium · Government Advisories · Score 24 · CISA Cybersecurity Advisories**
-
-View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.
-
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
-
-**CVEs:** CVE-2026-126088
-
-### [Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/)
-
-**Medium · Active Exploitation · Score 18 · SecurityWeek**
-
-Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch.
+Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html)
+### [Hackers use autonomous AI tool Cairn to find zero-day, take over server](https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/)
 
-**Medium · Critical Vulnerabilities · Score 18 · The Hacker News**
+**Medium · Active Exploitation · Score 18 · BleepingComputer**
 
-A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Five warning signs of ransomware breach before encryption or data theft](https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/)
-
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins.
+Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Nvidia Responds to Gentlemen Ransomware Claim](https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/)
+### [New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
+
+**Medium · Active Exploitation · Score 18 · The Hacker News**
+
+A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak](https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/)
 
 **Low · Ransomware · Score 12 · SecurityWeek**
 
-Nvidia says it has found no indication that its systems were compromised after the Gentlemen ransomware group listed the company as a victim.
+The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [NVIDIA investigating Gentlemen ransomware breach claims](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
-
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms](https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/)
-
-**Low · Ransomware · Score 12 · BleepingComputer**
-
-Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Transport for London breach exposes 265,000 Oyster card users' data](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/)
+### [Vendor data breach exposes Chase, Visa, Mastercard customer info](https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/)
 
 **Low · Data Breaches · Score 10 · BleepingComputer**
 
-Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach.
+J.P.
 
 **Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories](https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html)
+### [SBC Medical Group Data Breach Impacts Over 2 Million](https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/)
 
-**Low · AI Security · Score 8 · The Hacker News**
+**Low · Data Breaches · Score 10 · SecurityWeek**
 
-The easiest way to fool someone is to give them something they already expect.
+Threat actors accessed databases containing customer information associated with clinics in Japan.
 
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-### [PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution](https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html)
+### [European Commission Confirms AI-Assisted Cyberattack Disrupted Services](https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/)
 
-**Low · Cloud Security · Score 8 · The Hacker News**
+**Low · Data Breaches · Score 10 · SecurityWeek**
 
-The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.
+The Commission took certain services offline to contain the incident, but it has no evidence of a data breach.
 
-**Why it matters:** Organizations should inventory potentially affected products, review the original advisory and prioritize the available security update, and monitor for credible exploitation evidence.
+**Why it matters:** Potentially affected organizations and individuals should follow confirmed notifications, review exposed-data risk, and strengthen monitoring for follow-on fraud or credential abuse.
 
-**CVEs:** CVE-2026-115560
-
-### [phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution](https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html)
+### [WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams](https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html)
 
 **Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment.
+Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-126714
+**CVEs:** CVE-2026-23871
 
-### [PHP security updates fix 18 flaws, including critical RCE bugs](https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/)
+### [Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts](https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html)
 
-**Low · Cloud Security · Score 4 · BleepingComputer**
+**Low · Critical Vulnerabilities · Score 4 · The Hacker News**
 
-The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers.
-
-**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
-
-### [Everything Is a Web Application, Including Your Firewall](https://thehackernews.com/2026/11/everything-is-web-application-including.html)
-
-**Low · Cloud Security · Score 4 · The Hacker News**
-
-One of the early targets of PHP2Shell exploitation was the firewall.
+A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean.
 
 **Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
 
-**CVEs:** CVE-2026-109618, CVE-2026-109619
+**CVEs:** CVE-2026-99312
 
-### [Splunk Patches Nearly 140 Flaws Across Three Core Products](https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/)
+### [Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE](https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/)
 
-**Low · Cloud Security · Score 4 · SecurityWeek**
+**Low · Critical Vulnerabilities · Score 4 · SecurityWeek**
 
-The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation.
+Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE).
+
+**Why it matters:** Organizations should inventory potentially affected products, review the original advisory, and monitor for credible exploitation evidence.
+
+**CVEs:** CVE-2026-132825
+
+### [Q&A: Enabling more human-like interactions and understanding in multimodal foundation models](https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120)
+
+**Low · Critical Vulnerabilities · Score 0 · MIT News AI**
+
+Senior Research Scientist Jim Glass discusses how his MIT-IBM Computing Research Lab collaboration connects perception and language, and addresses the shortcoming of current models.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [ASUS warns of critical hard-coded key flaw in Control Center Express](https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/)
+### [New approach enables physically consistent AI models of chaotic systems](https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120)
+
+**Low · Artificial Intelligence · Score 0 · MIT News AI**
+
+Enforcing physics-based constraints prevents AI models from generating unreliable predictions for complex nonlinear systems in weather, climate, and turbulent flows.
+
+**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+
+### [Bell Canada says 'agentic' hacker stole enterprise customer data](https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/)
 
 **Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages.
+Bell Canada has confirmed that an "agentic" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits.
 
 **Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
-### [Introducing Tool Retrieval in the Gemini API](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/)
+### [Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html)
 
-**Low · Artificial Intelligence · Score 0 · Google AI**
+**Low · Malware · Score 0 · The Hacker News**
 
-Gemini spark on a space background
+Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Following the “mathocalypse,” mathematicians consider the future](https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120)
+
+**Low · Artificial Intelligence · Score 0 · MIT News AI**
+
+A panel discussion at MIT explored AI’s implications for mathematical discovery and the people who make it their profession.
 
 **Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
 
-### [Walter Isaacson on curiosity and creativity in the AI age.](https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/)
+### [Still tracking company passwords in spreadsheets? You’re flying blind.](https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/)
 
-**Low · Artificial Intelligence · Score 0 · Google AI**
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
 
-Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age.
+Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems.
 
-**Why it matters:** Security and technology teams should assess the development for changes to model risk, data handling, access controls, and their existing AI governance.
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit](https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/)
+
+**Low · Malware · Score 0 · SecurityWeek**
+
+Noteworthy stories that might have slipped under the radar: EU adds NoName057(16) to cyber sanctions list, malware targets CACs left in personal computers, Gemini agents targeted Epoch AI.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [N-able says recent security breach led to major service outage](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/)
+
+**Low · General Cybersecurity · Score 0 · BleepingComputer**
+
+N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
+
+### [Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday](https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/)
+
+**Low · General Cybersecurity · Score 0 · SecurityWeek**
+
+Experts commented on whether AI-accelerated patching played a role, the need for tested rollback plans, and the fragility of interconnected systems.
+
+**Why it matters:** Security teams should review the original reporting, determine whether the development affects their environment, and adjust monitoring or controls when supported by verified details.
 
 ## Sources
 
-- The Hacker News: success (11 new)
+- The Hacker News: success (9 new)
 - BleepingComputer: success (10 new)
 - Krebs on Security: no_new_articles (0 new)
-- SecurityWeek: success (10 new)
-- CISA Cybersecurity Advisories: success (3 new)
-- MIT News AI: success (1 new)
-- Google AI: success (2 new)
-- OpenAI News: success (3 new)
+- SecurityWeek: success (8 new)
+- CISA Cybersecurity Advisories: success (1 new)
+- MIT News AI: success (4 new)
+- Google AI: no_new_articles (0 new)
+- OpenAI News: success (7 new)
